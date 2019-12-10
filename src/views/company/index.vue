@@ -2,7 +2,7 @@
   <div class="view">
     <img class="t-banner" src="../../assets/image/sy_t.jpg">
     <div class="b-table">
-      <div @click="goPage('yyzz')">优质服务</div>
+      <div @click="goPage('yyzz')">优质服务t</div>
       <div @click="goPage('fwpz')">服务品质</div>
       <div @click="goPage('smrw')">使命服务</div>
     </div>
