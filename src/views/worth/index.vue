@@ -59,6 +59,7 @@ export default {
 
 .wrap1>p:nth-of-type(1){
   margin-bottom: 20px;
+  /* animation: show1 1s linear  1; */
 }
 
 @keyframes show1 {
