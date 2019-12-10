@@ -18,7 +18,7 @@ export default {
   name: 'App',
   data() {
     return {
-      isShowTips: false, // 是否显示下载提示
+      isShowTips: false, // 是否显示下载提示 test
       defaultDatetime: new Date(),
       transitionName: '',
       show: false
