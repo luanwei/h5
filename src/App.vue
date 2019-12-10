@@ -6,19 +6,6 @@
     <div v-if="toast" class="toast">
       <div>{{ toast }}</div>
     </div>
-<!--    <div v-if="timeShow" class="timeLoading">-->
-<!--      <vue-hash-calendar-->
-<!--        ref="picker"-->
-<!--        :default-datetime="defaultDatetime"-->
-<!--        :is-show-week-view="false"-->
-<!--        :show-today-button="true"-->
-<!--        week-start="sunday"-->
-<!--        format="YY/MM/DD hh:mm"-->
-<!--        picker-type="datetime"-->
-<!--        @confirm="dateConfirm"-->
-<!--      />-->
-<!--    </div>-->
-<!--    <div v-show="show" class="go-back" @click="goHome"/>-->
     <transition :name="transitionName">
       <router-view/>
     </transition>
@@ -26,13 +13,12 @@
 </template>
 
 <script>
-import { getKeyItem, setKeyItem, getRequest } from '@/utils/auth'
 import { mapGetters } from 'vuex'
 export default {
   name: 'App',
   data() {
     return {
-      isShowTips: false,// 是否显示下载提示
+      isShowTips: false, // 是否显示下载提示
       defaultDatetime: new Date(),
       transitionName: '',
       show: false
@@ -60,36 +46,15 @@ export default {
         console.log('right')
       }
       document.title = to.meta.title
-    },
-    // timeShow(val) {
-    //   if (val) {
-    //     this.$refs.picker.show()
-    //   } else {
-    //     this.$refs.picker.close()
-    //   }
-    // }
+    }
   },
   created() {
-    const projectCode = getRequest('ProjectCode')
-    const func = getRequest('function')
-    if (projectCode) {
-      setKeyItem('projectCode', projectCode)
-      setKeyItem('function', func)
-    } else {
-      setKeyItem('projectCode', null)
-      setKeyItem('function', null)
-    }
+
   },
   mounted() {
   },
   methods: {
-    goHome() {
-      console.log('aaa')
-      this.$router.replace({ path: '/' })
-    },
-    dateConfirm(date) {
-      console.log(date,'confirm')
-    }
+
   }
 }
 </script>

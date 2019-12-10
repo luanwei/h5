@@ -1,9 +1,9 @@
 {
-  "name": "cqstcp_ops",
-  "version": "3.9.0",
+  "name": "h5",
+  "version": "1.0",
   "license": "MIT",
-  "description": "重庆时空大数据服务平台——运维管理平台",
-  "author": "Zong Jian <cqzongjian@gmail.com>",
+  "description": "微信H5",
+  "author": "lw <519046106@qq.com>",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
