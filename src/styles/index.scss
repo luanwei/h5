@@ -40,6 +40,10 @@ body {
   }
 }
 
+html{
+  font-size: 10px;
+}
+
 //page
 .page,
 .view {
@@ -104,11 +108,11 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
-.content-box{
+.content-box {
   margin: 0 5%;
 }
 
-.content-box h5{
+.content-box h5 {
   font-size: 18px;
   color: #006666;
   margin: 20px 0 6px 0;
@@ -118,4 +122,54 @@ body {
   font-size: 14px;
   color: #404040;
   line-height: 25px;
+}
+
+/* 动画 */
+.animation-container {
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.animation-fade-left {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.animation-fade-right {
+  -webkit-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.animation-fade-down {
+  -webkit-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.animation-fade-left.run-animation {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.animation-fade-right.run-animation {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.animation-fade-down.run-animation {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+
+  opacity: 1;
 }
