@@ -40,12 +40,13 @@ export default {
     showAnimation() {
       setTimeout(() => {
         this.isShow = true;
-      }, 1000);
+         this.isShow2 = true;
+      }, 700);
 
       setTimeout(() => {
         this.isShow1 = true;
-         this.isShow2 = true;
-      }, 1200);
+        
+      }, 800);
     }
   }
 };

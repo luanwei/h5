@@ -1,6 +1,18 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="../../assets/image/sy_t.jpg">
+    <img class="t-banner" src="@/assets/image/policy.png">
+    <div class="content-box reset-box">
+      <h5 class="reset-title animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }">不只是价格更优！</h5>
+      <p class="color-black-8 animation-container animation-fade-left" v-bind:class="{'run-animation':isShow1 }">——合规前提下，保持最优价格</p>
+      <h5 class="reset-title animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }">更重要的是</h5>
+      <div class="text-box animation-container animation-fade-up" v-bind:class="{'run-animation':isShow1 }">
+        <p class="color-black-8">赔付更宽松、更简捷</p>
+        <p class="color-black-8">服务更全面、更贴心</p>
+        <p class="color-black-8">价值更丰富、更优厚</p>
+      </div>
+
+    </div>
+
   </div>
 </template>
 
@@ -9,20 +21,54 @@
 export default {
   components: {},
   data() {
-    return {}
+    return {
+      isShow: false,
+      isShow1: false,
+      isShow2: false
+    };
   },
-  created() {
-  },
-  mounted: function() {
+  created() { },
+  mounted() {
+    this.showAnimation();
   },
 
-  methods: {}
+  methods: {
+    showAnimation() {
+      setTimeout(() => {
+        this.isShow = true;
+        this.isShow2 = true;
+      }, 700);
+
+      setTimeout(() => {
+        this.isShow1 = true;
+
+      }, 800);
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
-  .t-banner {
-    display: block;
-    width: 100%;
-    height: 32vw;
-  }
+.t-banner {
+  display: block;
+  width: 100%;
+  height: 33%;
+}
+
+.text-box{
+  margin-left: 5%;
+}
+
+.reset-title {
+  margin-top: 15%;
+  font-size: 2rem;
+}
+
+.reset-box {
+  margin: 0 auto 0 20%;
+}
+
+.reset-box p {
+  font-size: 1.5rem;
+  padding-left: 10%;
+}
 </style>
