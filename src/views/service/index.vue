@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="@/assets/image/service.jpg">
+    <img class="t-banner" src="@/assets/image/service.jpg" />
     <div class="list-box">
       <ul class="list">
         <li>专设驻点服务</li>
@@ -20,37 +20,35 @@
 export default {
   components: {},
   data() {
-    return {}
+    return {};
   },
-  created() {
-  },
-  mounted: function() {
-  },
+  created() {},
+  mounted: function() {},
 
   methods: {}
-}
+};
 </script>
 <style lang="scss" scoped>
-  .t-banner {
-    display: block;
-    width: 100%;
-    height: 33%;
-  }
+.t-banner {
+  display: block;
+  width: 100%;
+  height: 33%;
+}
 
-  .list-box{
-    margin: 2% 10%;
-    display: inline-block;
-    font-size: 1.8rem;
-    color:#006666;
-  }
+.list-box {
+  margin: 2% 10%;
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #006666;
+}
 
-  .list li{
-    list-style: none;
-    width: 50%;
-    float: left;
-    text-align: center;
-    margin: 1rem 0;
-    border: 1px solid;
-    padding: 0.6rem 0;
-  }
+.list li {
+  list-style: none;
+  width: 50%;
+  float: left;
+  text-align: center;
+  margin: 1rem 0;
+  border: 1px solid;
+  padding: 0.6rem 0;
+}
 </style>
