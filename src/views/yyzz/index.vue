@@ -66,7 +66,7 @@ export default {
   }
   .l-red{
     width: 100%;
-    font-size: 3.7vw;
+    font-size: 4.533vw;
     height: 6vw;
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@ export default {
     span{
       margin-left: 3px;
       color: red;
-      font-size: 4vw;
+      font-size: 5vw;
       font-weight: 600;
     }
   }
@@ -89,7 +89,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    font-size: 3.7vw;
+    font-size: 4vw;
     text-align: right;
     padding: 5.3vw;
   }

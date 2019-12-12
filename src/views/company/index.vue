@@ -103,7 +103,7 @@ export default {
   }
 
   .title {
-    font-size: 4vw;
+    font-size: 4.53vw;
     line-height: 6vw;
     color: #006666;
     padding: 0 5.3vw;
@@ -120,13 +120,13 @@ export default {
   }
 
   .describe {
-    width: 50%;
+    width: 60%;
     margin-top: 12vw;
-    margin-right: 10%;
-    margin-left: 40%;
+    margin-right: 7%;
+    margin-left: 33%;
     text-align: left;
     color: #a4a4a4;
-    font-size: 3.2vw;
+    font-size: 3.75vw;
     line-height: 1.8;
     letter-spacing: 1px;
   }
