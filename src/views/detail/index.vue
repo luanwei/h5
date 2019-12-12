@@ -6,6 +6,7 @@
                 <div v-for="(child,index1) in item.list" :key="index1">
                     <h5>{{child.title}}</h5>
                     <p>{{child.content}}</p>
+                    <img v-if="child.images" :src="child.images" alt="">
                 </div>
             </div>
 
@@ -14,7 +15,6 @@
 </template>
 
 <script>
-
 export default {
     components: {},
     data() {
@@ -22,7 +22,7 @@ export default {
             currentType: '',
             DataList: [
                 {
-                    type: "zdff",
+                    type: "zdfw",
                     title: "专设驻点服务",
                     list: [
                         {
@@ -33,18 +33,18 @@ export default {
                         {
                             title: '配备应急工具 配置常用耗材',
                             content: "体验站还配备了充气压力泵、搭电电源、拖车绳、换胎工具箱等应急救援工具，方便您获得应急自助服务，而不必等待专业救援服务。体验站还备有玻璃水、表板蜡、清洗剂等日常专用耗材，您可以免费使用。",
-                            images: ""
+                            images:  require('@/assets/image/zdfw_img1.png')
                         },
                     ]
                 },
                 {
-                    type: "cpff",
+                    type: "cpfw",
                     title: "专属产品服务",
                     list: [
                         {
                             title: '电力职工综合保障计划（组合）',
                             content: "包含电力职工家庭财产、人员意外伤害、第三者责任三大方面16个产品条款，保障超全。价格有84元、268元、420元、840元四档。详情请进“无忧云”微信平台查看（下同）。",
-                            images: ""
+                            images:""
                         },
                         {
                             title: '电力职工“泰惠保”国内旅游险',
@@ -69,7 +69,7 @@ export default {
                         {
                             title: '电力职工“四季安泰”个人意外险',
                             content: "保障电力职工个人的人身意外伤害事故，包含常规的意外身故残疾和烧烫伤（10万）、意外伤害医疗（0.5万），还扩展了住院补贴0.72万。每份保费118元/年。",
-                            images: ""
+                            images: require('@/assets/image/cpfw_img1.png')
                         },
                     ]
                 },
@@ -86,7 +86,7 @@ export default {
                         {
                             title: '单方事故  简便灵活',
                             content: "5000元内无人伤物损案件，免现场查勘，免事故证明，仅凭事故现场照片即可； 3000元内，免维修发票和人伤票据；宽松定损，自动核损，快速赔付。",
-                            images: ""
+                            images: require('@/assets/image/lptd_img1.png')
                         },
                         {
                             title: '大案要案  主动作为',
@@ -96,7 +96,7 @@ export default {
                         {
                             title: '索赔时效  特别提醒',
                             content: "据相关法律法规规定：1.发生保险事故后，请务必在48小时内进行报案；2.报案后，保险事故索赔时效为2年。超过2年视为自动放弃索赔。",
-                            images: ""
+                            images: require('@/assets/image/service.jpg')
                         },
                     ]
                 },
@@ -112,12 +112,12 @@ export default {
                     {
                         title: '审证（小审）流程',
                         content: "",
-                        images: "1"
+                        images: require('@/assets/image/jsfw_img1.png')
                     },
                     {
                         title: '审车（大审）流程',
                         content: "",
-                        images: "1"
+                        images: require('@/assets/image/jsfw_img2.png')
                     },]
                 }, {
                     type: "dljy",
@@ -131,7 +131,7 @@ export default {
                     {
                         title: '服务流程',
                         content: "",
-                        images: "1"
+                        images: require('@/assets/image/dljy_img1.png')
                     }, {
                         title: '电力职工不限距离不限次',
                         content: "电力职工享受全国免费道路救援不限里程不限次数。",
@@ -140,7 +140,7 @@ export default {
                 }, {
                     type: "ajfw",
                     title: "每年安全监测  六大核心系统",
-                    lsit: [{
+                    list: [{
 
                         title: '集中开展活动',
                         content: "我们提供免费车辆安全检测服务。主要在每年三个时段集中开展“巡回式”现场服务：1.春节前一个月时间里，举办“英大财险‘泰和迎春’专题服务活动”，旨在为春节长假提供安全保障服务。2.每年3月15日开始，举办为期一个月的“英大财险‘尊享泰和’客户服务节”。3.国庆前一个月时间里，举办“英大财险‘泰和金秋’专题服务活动”，旨在为国庆长假提供安全保障服务。",
@@ -148,7 +148,7 @@ export default {
                     }, {
                         title: '安全检测项目',
                         content: "1.电脑检测故障码2.发动机及变速箱工作态3.机油及防冻液状况4.转向系统状态5.制动机构及刹车片状况6.胎压计胎损状况7.灯光信号8.小耗添补",
-                        images: ""
+                        images: require('@/assets/image/ajfw_img1.png')
                     }]
                 },
 
@@ -170,6 +170,11 @@ export default {
     text-indent: 2rem;
     font-size: 1.5rem;
     line-height: 2.6rem;
+}
+
+.reset-box img{
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .reset-box h5 {
