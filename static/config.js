@@ -1,6 +1,6 @@
 // 开发环境配置
 const dev = {
-  ENV: 'development',
+  ENV: 'development'
 
 }
 

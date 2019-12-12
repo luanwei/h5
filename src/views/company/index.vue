@@ -1,8 +1,22 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="../../assets/image/sy_t.jpg">
-    <div class="b-table">
-      <div @click="goPage('yyzz')">优质服务t</div>
+    <img class="t-banner" src="../../assets/image/company_t.jpg">
+    <div class="title">
+      我们是——
+    </div>
+    <div :class="{'run-animation':isShow }" class="slogan animation-container animation-fade-right" >
+      国家电网自己的财产保险公司<br>
+      精心服务电力职工的保险公司
+    </div>
+    <div :class="{'run-animation':isShow1 }" class="describe animation-container animation-fade-right" >
+      总公司成立于2008年9月<br>
+      总部设在北京<br>
+      重庆分公司成立于2016年9月<br>
+      位于市电力公司昆亚大厦7-8楼<br>
+    </div>
+
+    <div :class="{'run-animation':isShow2 }" class="b-table animation-container animation-fade-up" >
+      <div @click="goPage('yyzz')">优质服务</div>
       <div @click="goPage('fwpz')">服务品质</div>
       <div @click="goPage('smrw')">使命服务</div>
     </div>
@@ -14,11 +28,16 @@
 export default {
   components: {},
   data() {
-    return {}
+    return {
+      isShow: false,
+      isShow1: false,
+      isShow2: false
+    }
   },
   created() {
   },
   mounted: function() {
+    this.showAnimation()
   },
   methods: {
     goPage(type) {
@@ -33,6 +52,17 @@ export default {
           this.$router.push({ path: '/smrw' })
           break
       }
+    },
+    showAnimation() {
+      setTimeout(() => {
+        this.isShow = true
+      }, 700)
+      setTimeout(() => {
+        this.isShow1 = true
+      }, 900)
+      setTimeout(() => {
+        this.isShow2 = true
+      }, 1000)
     }
   }
 }
@@ -41,7 +71,7 @@ export default {
   .t-banner {
     display: block;
     width: 100%;
-    height: 32vw;
+    height: 55vw;
   }
 
   .b-table {
@@ -54,19 +84,50 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 1px solid #333333;
+    border-top: 1px solid #a4a4a4;
+
     div {
       flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 13.4vw;
-      border-right: 1px solid #333333;
+      border-right: 1px solid #a4a4a4;
       font-size: 4vw;
       font-weight: 600;
     }
+
     :nth-last-of-type(1) {
       border-right: none;
     }
+  }
+
+  .title {
+    font-size: 4vw;
+    line-height: 6vw;
+    color: #006666;
+    padding: 0 5.3vw;
+    text-align: left;
+    margin: 4vw;
+  }
+
+  .slogan {
+    text-align: center;
+    color: #006666;
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 2;
+  }
+
+  .describe {
+    width: 50%;
+    margin-top: 12vw;
+    margin-right: 10%;
+    margin-left: 40%;
+    text-align: left;
+    color: #a4a4a4;
+    font-size: 3.2vw;
+    line-height: 1.8;
+    letter-spacing: 1px;
   }
 </style>
