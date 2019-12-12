@@ -3,7 +3,7 @@
     <img class="t-banner" src="@/assets/image/service.jpg" />
     <div class="list-box">
       <ul class="list">
-        <li @click="goPage('zdff')">专设驻点服务</li>
+        <li @click="goPage('zdfw')">专设驻点服务</li>
         <li @click="goPage('cpfw')">专属产品服务</li>
         <li @click="goPage('lptd')">专属理赔通道</li>
         <li @click="goPage('dljy')">全国道路救援</li>
