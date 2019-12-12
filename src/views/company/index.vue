@@ -121,12 +121,12 @@ export default {
 
   .describe {
     width: 60%;
-    margin-top: 12vw;
+    margin-top: 4vh;
     margin-right: 7%;
-    margin-left: 33%;
+    margin-left: 30%;
     text-align: left;
     color: #a4a4a4;
-    font-size: 3.75vw;
+    font-size: 4.1vw;
     line-height: 1.8;
     letter-spacing: 1px;
   }

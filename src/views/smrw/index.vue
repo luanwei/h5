@@ -82,14 +82,15 @@ export default {
   }
 
   .describe {
-    width: 50%;
-    margin-top: 12vw;
-    margin-right: 10%;
-    margin-left: 40%;
+    width: 88%;
+    margin-top: 8vw;
+   /*  margin-right: 10%;
+    margin-left: 30%; */
     text-align: left;
     color: #a4a4a4;
-    font-size: 3.7333vw;
+    font-size: 4vw;
     line-height: 1.8;
     letter-spacing: 1px;
+    padding-left: 26vw;
   }
 </style>

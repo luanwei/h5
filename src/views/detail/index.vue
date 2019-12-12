@@ -4,8 +4,8 @@
             <div class="" v-for="(item,index) in DataList" v-if="item.type==currentType" :key="index">
                 <div class="page-title">{{item.title}}</div>
                 <div v-for="(child,index1) in item.list" :key="index1">
-                    <h5>{{child.title}}</h5>
-                    <p>{{child.content}}</p>
+                    <h5>★ {{child.title}}</h5>
+                    <p v-html="child.content"></p>
                     <img v-if="child.images" :src="child.images" alt="">
                 </div>
             </div>
@@ -95,7 +95,7 @@ export default {
                         },
                         {
                             title: '索赔时效  特别提醒',
-                            content: "据相关法律法规规定：1.发生保险事故后，请务必在48小时内进行报案；2.报案后，保险事故索赔时效为2年。超过2年视为自动放弃索赔。",
+                            content: "据相关法律法规规定：<br/><p style='text-indent:2rem;'>1.发生保险事故后，请务必在48小时内进行报案；</span><br/>2.报案后，保险事故索赔时效为2年。超过2年视为自动放弃索赔。",
                             images: require('@/assets/image/service.jpg')
                         },
                     ]
@@ -179,7 +179,8 @@ export default {
 
 .reset-box h5 {
     font-size: 1.7rem;
-    margin: 2.5rem 0 0.6rem 0;
+    margin: 2rem 0 0.6rem 0;
+    color:#C00000;
 }
 
 .page-title{

@@ -1,12 +1,12 @@
 <template>
   <div class="view">
     <img class="t-banner" src="../../assets/image/yyzz_t.jpg">
-    <div :class="{'run-animation':isShow1 }" class="l-red animation-container animation-fade-right" ><i>★</i> 2010年 获评：企业集团发展金融<span>典型成功案例</span></div>
-    <div :class="{'run-animation':isShow2 }" class="l-red animation-container animation-fade-right"><i>★</i>2012年 位列财险公司<span>盈利能力第一位</span></div>
+    <div :class="{'run-animation':isShow1 }" class="l-red animation-container animation-fade-right" ><i>★</i> 2010年获评：企业集团发展金融<span>典型成功案例</span></div>
+    <div :class="{'run-animation':isShow2 }" class="l-red animation-container animation-fade-right"><i>★</i>2012年位列财险公司<span>盈利能力第一位</span></div>
     <div :class="{'run-animation':isShow3 }" class="l-right animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
-    <div :class="{'run-animation':isShow4 }" class="l-red animation-container animation-fade-right"><i>★</i> 2013年 位列中<span>国保险业 综合竞争力第三位</span></div>
+    <div :class="{'run-animation':isShow4 }" class="l-red animation-container animation-fade-right"><i>★</i> 2013年位列中<span>国保险业 综合竞争力第三位</span></div>
     <div :class="{'run-animation':isShow5 }" class="l-right animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
-    <div :class="{'run-animation':isShow6 }" class="l-red animation-container animation-fade-right"><i>★</i> 2014年 获评<span>中国价值成长十佳保险公司</span></div>
+    <div :class="{'run-animation':isShow6 }" class="l-red animation-container animation-fade-right"><i>★</i> 2014年获评<span>中国价值成长十佳保险公司</span></div>
     <div :class="{'run-animation':isShow7 }" class="l-red animation-container animation-fade-right"><i>★</i> 公司研发的系列电网产品，被确定为<span>行业标准</span></div>
   </div>
 </template>
@@ -66,7 +66,7 @@ export default {
   }
   .l-red{
     width: 100%;
-    font-size: 4.533vw;
+    font-size: 4vw;
     height: 6vw;
     display: flex;
     align-items: center;
@@ -78,9 +78,8 @@ export default {
       margin-right: 3px;
     }
     span{
-      margin-left: 3px;
       color: red;
-      font-size: 5vw;
+      font-size: 4.5vw;
       font-weight: 600;
     }
   }

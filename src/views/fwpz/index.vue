@@ -119,8 +119,9 @@ export default {
     justify-content: flex-start;
     height:8vw;
     padding-left: 12vw;
-    font-size: 3.7333vw;
+    font-size: 4.5vw;
     color: #006666;
+    margin-top: 2vh;
     span{
       margin-right: 1.3vw;
     }
@@ -133,9 +134,10 @@ export default {
   .l-c{
     display: flex;
     line-height: 6vw;
-    color: #006666;
+    /* color: #006666; */
+    color: #a4a4a4;
     justify-content: flex-start;
-    font-size: 3.2vw;
+    font-size: 3.9vw;
     padding:1vw 5.333vw 1vw 15vw
   }
 </style>

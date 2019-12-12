@@ -9,8 +9,8 @@
         <li @click="goPage('dljy')">全国道路救援</li>
         <li @click="goPage('jsfw')">代办检审服务</li>
         <li @click="goPage('ajfw')">定期安检服务</li>
-        <!--  <li @click="goPage('yyzz')">“车管家”服务</li>
-          <li @click="goPage('yyzz')">索赔助理服务</li>-->
+        <li @click="goPage('cgj')">“车管家”服务</li>
+        <li @click="goPage('zlfw')">索赔助理服务</li>
       </ul>
     </div>
     <div class="content-box margin-h-10">
@@ -27,12 +27,12 @@ export default {
   data() {
     return {};
   },
-  created() { },
-  mounted: function() { },
+  created() {},
+  mounted: function() {},
 
   methods: {
     goPage(type) {
-      this.$router.push({ path: '/detail', query: { type: type } })
+      this.$router.push({ path: "/detail", query: { type: type } });
     }
   }
 };
@@ -40,13 +40,14 @@ export default {
 <style lang="scss" scoped>
 .t-banner {
   display: block;
-  width: 100%;
-  height: 33%;
+  width: 80%;
+  height:auto;
+  margin-left: 10%;
 }
 
 .list-box {
   width: 80%;
-  margin: 0% 10%;
+  margin: -5% 10% 0% 10%;
   display: inline-block;
   font-size: 1.8rem;
   color: #006666;
@@ -57,7 +58,7 @@ export default {
   width: 45%;
   float: left;
   text-align: center;
-  margin: 1rem 2.5%;
+  margin: 0.8rem 2.5%;
   border: 1px solid rgba(0, 102, 102, 0.5);
   padding: 0.6rem 0;
   border-radius: 0.6rem;

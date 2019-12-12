@@ -4,8 +4,8 @@
       <img src="@/assets/image/worth.png" />
     </div>
     <div class="wrap1">
-      <p class="animation-container animation-fade-left" v-bind:class="{'run-animation':isShow }" >在别的公司，您是一个普通的车险客户</p>
-      <p class="animation-container animation-fade-left" v-bind:class="{'run-animation':isShow1 }" >在国网英大，您就是我们贴心维护的“使命VIP”!</p>
+      <p class="animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }" >在别的公司，您是一个普通的车险客户</p>
+      <p class="animation-container animation-fade-right" v-bind:class="{'run-animation':isShow1 }" >在国网英大，您就是我们贴心维护的“使命VIP”!</p>
     </div>
     <div class="wrap2 content-box animation-container animation-fade-right" v-bind:class="{'run-animation':isShow2 }">
       <h5>各项免费活动贯穿全年</h5>
@@ -17,7 +17,9 @@
       </p>
       <h5>与"途虎" 连锁店深度合作</h5>
       <p>联合“途虎养车”连锁店，提供特别优待或部分免费服务（推介集“红心”，换多重价值服务）</p>
+       <div class="spec-text animation-container animation-fade-up" v-bind:class="{'run-animation':isShow3 }">我们仍在不断打造无限丰富的特惠价至服务！</div>
     </div>
+   
   </div>
 </template>
 
@@ -28,7 +30,8 @@ export default {
     return {
       isShow: false,
       isShow1:false,
-      isShow2:false
+      isShow2:false,
+      isShow3:false,
     };
   },
   created() {},
@@ -40,24 +43,31 @@ export default {
     showAnimation() {
       setTimeout(() => {
         this.isShow = true;
-         this.isShow2 = true;
+        
       }, 700);
 
       setTimeout(() => {
         this.isShow1 = true;
-        
       }, 800);
+
+      setTimeout(() => {
+        this.isShow2 = true;
+      }, 900);
+
+      setTimeout(() => {
+        this.isShow3 = true;
+      }, 1000);
     }
   }
 };
 </script>
 <style lang="scss" scoped>
 .img-box {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 .img-box img {
-  width: 60%;
-  margin-left: -6%;
+  width: 40%;
+  
   margin-top: 4%;
 }
 
@@ -67,7 +77,7 @@ export default {
   right: 5%;
   top: 4%;
   color: #006666;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
 }
@@ -79,9 +89,15 @@ export default {
 .wrap2 {
   position: absolute;
 }
-.t-banner {
-  display: block;
-  width: 100%;
-  height: 32vw;
+
+.wrap2 h5{
+  color:#C00000;
+}
+
+.spec-text{
+  font-size: 2rem;
+  text-align:center;
+  margin-top: 1.8rem;
+  color:#006666;
 }
 </style>
