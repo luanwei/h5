@@ -76,7 +76,7 @@ export default {
     div{
       padding-left: 10vw;
       font-size: 4vw;
-      color: #a4a4a4;
+      color: #040404;
       font-weight: normal;
     }
   }
@@ -87,7 +87,7 @@ export default {
    /*  margin-right: 10%;
     margin-left: 30%; */
     text-align: left;
-    color: #a4a4a4;
+    color: #040404;
     font-size: 4vw;
     line-height: 1.8;
     letter-spacing: 1px;

@@ -61,6 +61,7 @@ export default {
 .reset-title {
   margin-top: 15%;
   font-size: 2rem;
+  color:red;
 }
 
 .reset-box {

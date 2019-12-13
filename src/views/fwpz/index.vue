@@ -135,7 +135,7 @@ export default {
     display: flex;
     line-height: 6vw;
     /* color: #006666; */
-    color: #a4a4a4;
+    color: #040404;
     justify-content: flex-start;
     font-size: 3.9vw;
     padding:1vw 5.333vw 1vw 15vw
