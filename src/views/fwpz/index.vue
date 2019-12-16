@@ -2,7 +2,7 @@
   <div class="view">
     <div class="top">
       <img class="map-1" src="../../assets/image/map-1.jpg">
-      <span>重庆市服务网点全覆盖</span>
+<!--      <span>重庆市服务网点全覆盖</span>-->
       <img class="map-2" src="../../assets/image/map-2.jpg">
       <img class="jq-1" src="../../assets/image/jq-1.jpg">
       <img class="jq-2" src="../../assets/image/jq-2.jpg">
