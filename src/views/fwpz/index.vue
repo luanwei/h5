@@ -16,6 +16,7 @@
 <!--      <img class="map-2" src="../../assets/image/map-2.jpg">-->
       <img class="jq-1" src="../../assets/image/jq-1.jpg">
       <img class="jq-2" src="../../assets/image/jq-2.jpg">
+      <img class="jq-3" src="../../assets/image/jq-3.jpg">
     </div>
     <div :class="{'run-animation':isShow1 }" class="l-l animation-container animation-fade-right">
       <span>◆</span> 重庆监管机构评级：<span>AA</span>
@@ -87,7 +88,7 @@ export default {
    position: relative;
    height: 22vw;
    z-index: 1;
-   margin-top: -10vw;
+   /* margin-top: -10vw; */
    .map-1{
      position: absolute;
      top: 3.2vw;
@@ -115,16 +116,26 @@ export default {
    }
    .jq-1{
      position: absolute;
-     top: 3.2vw;
+     top: 5vw;
      left: 6.2vw;
-     width: 11.73vw;
+     /* width: 11.73vw; */
+     width: auto;
      height: 14.933vw;
    }
    .jq-2{
      position: absolute;
-     top: 3.2vw;
+     top: 5vw;
      left: 21.2vw;
-     width: 9.1333vw;
+    /*  width: 9.1333vw; */
+     width: auto;
+     height: 15.2vw;
+   }
+   .jq-3{
+     position: absolute;
+     top: 5vw;
+     left: 35.2vw;
+     /* width: 9.1333vw; */
+      width: auto;
      height: 15.2vw;
    }
  }
@@ -150,7 +161,7 @@ export default {
     display: flex;
     line-height: 6vw;
     /* color: #006666; */
-    color: #a4a4a4;
+    color: #404040;
     justify-content: flex-start;
     font-size: 3.9vw;
     padding:1vw 5.333vw 1vw 15vw
