@@ -14,9 +14,9 @@
       <!--      <img class="map-1" src="../../assets/image/map-1.jpg">-->
       <!--      <span>重庆市服务网点全覆盖</span>-->
       <!--      <img class="map-2" src="../../assets/image/map-2.jpg">-->
-      <img class="jq-1" src="../../assets/image/jq-1.jpg">
-      <img class="jq-2" src="../../assets/image/jq-2.jpg">
-      <img class="jq-3" src="../../assets/image/jq-3.jpg">
+      <img class="jq-1" src="../../assets/image/jq-1.png">
+      <img class="jq-2" src="../../assets/image/jq-2.png">
+      <img class="jq-3" src="../../assets/image/jq-3.png">
     </div>
     <div :class="{'run-animation':isShow1 }" class="l-l animation-container animation-fade-right">
       <span>◆</span> 重庆监管机构评级：
