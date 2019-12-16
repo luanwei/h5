@@ -1,9 +1,19 @@
 <template>
   <div class="view">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="../../assets/image/map-1.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/image/map-2.jpg" alt="">
+        </div>
+      </div>
+    </div>
     <div class="top">
-      <img class="map-1" src="../../assets/image/map-1.jpg">
+<!--      <img class="map-1" src="../../assets/image/map-1.jpg">-->
 <!--      <span>重庆市服务网点全覆盖</span>-->
-      <img class="map-2" src="../../assets/image/map-2.jpg">
+<!--      <img class="map-2" src="../../assets/image/map-2.jpg">-->
       <img class="jq-1" src="../../assets/image/jq-1.jpg">
       <img class="jq-2" src="../../assets/image/jq-2.jpg">
     </div>
@@ -28,7 +38,7 @@
 </template>
 
 <script>
-
+import Swiper from 'swiper'
 export default {
   components: {},
   data() {
@@ -43,6 +53,10 @@ export default {
   created() {
   },
   mounted: function() {
+    var mySwiper = new Swiper('.swiper-container', {
+      autoplay:true,
+      loop:true
+    })
     this.showAnimation()
   },
 
@@ -71,8 +85,9 @@ export default {
  .top{
    display: block;
    position: relative;
-   height: 64vw;
+   height: 22vw;
    z-index: 1;
+   margin-top: -10vw;
    .map-1{
      position: absolute;
      top: 3.2vw;
@@ -100,15 +115,15 @@ export default {
    }
    .jq-1{
      position: absolute;
-     top: 40vw;
-     left: 11.2vw;
+     top: 3.2vw;
+     left: 6.2vw;
      width: 11.73vw;
      height: 14.933vw;
    }
    .jq-2{
      position: absolute;
-     top: 40vw;
-     left: 26.2vw;
+     top: 3.2vw;
+     left: 21.2vw;
      width: 9.1333vw;
      height: 15.2vw;
    }
@@ -140,4 +155,19 @@ export default {
     font-size: 3.9vw;
     padding:1vw 5.333vw 1vw 15vw
   }
+  .swiper-slide{
+    position: relative;
+    width: 100%;
+    height: 55vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-container{
+    margin-top: 3.2vw;
+  }
+ .swiper-slide img{
+   height: 100%;
+   width: auto;
+ }
 </style>

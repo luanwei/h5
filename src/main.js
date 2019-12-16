@@ -1,7 +1,8 @@
 import Vue from 'vue'
 // import '@/permission' // permission control
 import '@/styles/index.scss' // global css
-
+import Swiper from 'swiper'
+import 'swiper/css/swiper.css'
 import App from './App'
 import store from './store'
 import router from './router'
