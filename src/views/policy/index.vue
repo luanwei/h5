@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="@/assets/image/policy.png">
+    <img class="t-banner" src="@/assets/image/policy.jpg">
     <div class="content-box reset-box">
       <h5 class="reset-title animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }">不只是价格更优！</h5>
       <p class="color-black-8 animation-container animation-fade-left" v-bind:class="{'run-animation':isShow1 }">——合规前提下，保持最优价格</p>
@@ -51,7 +51,7 @@ export default {
 .t-banner {
   display: block;
   width: 100%;
-  height: 33%;
+ /* height: 33%;*/
 }
 
 .text-box{

@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="../../assets/image/cpfw_img1.png">
+    <img class="t-banner" src="@/assets/image/cpfw_img1.jpg">
     <div class="title">
       我们的使命——
     </div>
@@ -55,7 +55,7 @@ export default {
   .t-banner {
     display: block;
     width: 100%;
-    height: 55vw;
+   /* height: 55vw;*/
   }
 
   .title {

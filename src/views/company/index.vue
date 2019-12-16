@@ -73,6 +73,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+
 .t-banner {
   display: block;
   width: 100%;

@@ -5,21 +5,22 @@
         <div class="swiper-slide">
           <img src="../../assets/image/map-1.jpg" alt="">
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" >
           <img src="../../assets/image/map-2.jpg" alt="">
         </div>
       </div>
     </div>
     <div class="top">
-<!--      <img class="map-1" src="../../assets/image/map-1.jpg">-->
-<!--      <span>重庆市服务网点全覆盖</span>-->
-<!--      <img class="map-2" src="../../assets/image/map-2.jpg">-->
+      <!--      <img class="map-1" src="../../assets/image/map-1.jpg">-->
+      <!--      <span>重庆市服务网点全覆盖</span>-->
+      <!--      <img class="map-2" src="../../assets/image/map-2.jpg">-->
       <img class="jq-1" src="../../assets/image/jq-1.jpg">
       <img class="jq-2" src="../../assets/image/jq-2.jpg">
       <img class="jq-3" src="../../assets/image/jq-3.jpg">
     </div>
     <div :class="{'run-animation':isShow1 }" class="l-l animation-container animation-fade-right">
-      <span>◆</span> 重庆监管机构评级：<span>AA</span>
+      <span>◆</span> 重庆监管机构评级：
+      <span>AA</span>
     </div>
     <div :class="{'run-animation':isShow2 }" class="l-c animation-container animation-fade-left">
       ——行业排名第三
@@ -55,8 +56,8 @@ export default {
   },
   mounted: function() {
     var mySwiper = new Swiper('.swiper-container', {
-      autoplay:true,
-      loop:true
+      autoplay: true,
+      loop: true
     })
     this.showAnimation()
   },
@@ -83,102 +84,114 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
- .top{
-   display: block;
-   position: relative;
-   height: 22vw;
-   z-index: 1;
-   /* margin-top: -10vw; */
-   .map-1{
-     position: absolute;
-     top: 3.2vw;
-     left: 12.2vw;
-     width: 34.4667vw;
-     height: 29.33vw;
-     z-index: 2;
-   }
+.top {
+  display: block;
+  position: relative;
+  height: 29vw;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+  margin: 0 12.5%;
+  /* margin-top: -10vw; */
+  .map-1 {
+    position: absolute;
+    top: 3.2vw;
+    left: 12.2vw;
+    width: 34.4667vw;
+    height: 29.33vw;
+    z-index: 2;
+  }
 
-   .map-2{
-     position: absolute;
-     top: 5.2vw;
-     left: 53.2vw;
-     width: 37.6vw;
-     height: 33.6vw;
-     z-index: 2;
-   }
-   span{
-     position: absolute;
-     top: 3.2vw;
-     left: 52.2vw;
-     color: red;
-     font-size: 3.2vw;
-     z-index: 3;
-   }
-   .jq-1{
-     position: absolute;
-     top: 5vw;
-     left: 6.2vw;
-     /* width: 11.73vw; */
-     width: auto;
-     height: 14.933vw;
-   }
-   .jq-2{
-     position: absolute;
-     top: 5vw;
-     left: 21.2vw;
+  .map-2 {
+    position: absolute;
+    top: 5.2vw;
+    left: 53.2vw;
+    width: 37.6vw;
+    height: 33.6vw;
+    z-index: 2;
+  }
+  span {
+    position: absolute;
+    top: 3.2vw;
+    left: 52.2vw;
+    color: red;
+    font-size: 3.2vw;
+    z-index: 3;
+  }
+  .jq-1 {
+    /*position: absolute;
+    top: 5vw;
+    left: 6.2vw;*/
+    /* width: 11.73vw; */
+    width: auto;
+    height: 27vw;
+  }
+  .jq-2 {
+   /* position: absolute;
+    top: 5vw;
+    left: 21.2vw;*/
     /*  width: 9.1333vw; */
-     width: auto;
-     height: 15.2vw;
-   }
-   .jq-3{
-     position: absolute;
-     top: 5vw;
-     left: 35.2vw;
-     /* width: 9.1333vw; */
-      width: auto;
-     height: 15.2vw;
-   }
- }
-  .l-l{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height:8vw;
-    padding-left: 12vw;
-    font-size: 4.5vw;
-    color: #006666;
-    margin-top: 2vh;
-    span{
-      margin-right: 1.3vw;
-    }
-    :nth-of-type(2){
-      color: red;
-      font-size: 4vw;
-      font-weight: 600;
-    }
+    width: auto;
+    height: 27vw;
   }
-  .l-c{
-    display: flex;
-    line-height: 6vw;
-    /* color: #006666; */
-    color: #404040;
-    justify-content: flex-start;
-    font-size: 3.9vw;
-    padding:1vw 5.333vw 1vw 15vw
+  .jq-3 {
+    /*position: absolute;
+    top: 5vw;
+    left: 35.2vw;*/
+    /* width: 9.1333vw; */
+    width: auto;
+    height: 27vw;
   }
-  .swiper-slide{
-    position: relative;
-    width: 100%;
-    height: 55vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.l-l {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 8vw;
+  padding-left: 12vw;
+  font-size: 4.5vw;
+  color: #006666;
+  margin-top: 2vh;
+  span {
+    margin-right: 1.3vw;
   }
-  .swiper-container{
-    margin-top: 3.2vw;
+   :nth-of-type(2) {
+    color: red;
+    font-size: 4vw;
+    font-weight: 600;
   }
- .swiper-slide img{
-   height: 100%;
-   width: auto;
- }
+}
+
+.l-c {
+  display: flex;
+  line-height: 6vw;
+  /* color: #006666; */
+  color: #404040;
+  justify-content: flex-start;
+  font-size: 3.9vw;
+  padding: 1vw 5.333vw 1vw 15vw
+}
+
+.swiper-slide {
+  position: relative;
+  width: 100%;
+  height: 57vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.2vw;
+  padding-bottom: 1vw;
+}
+
+.swiper-container {
+  
+}
+
+.swiper-slide img {
+  height: 100%;
+  width: auto;
+}
 </style>
