@@ -84,7 +84,7 @@ export default {
 
    .map-2{
      position: absolute;
-     top: 7.2vw;
+     top: 5.2vw;
      left: 53.2vw;
      width: 37.6vw;
      height: 33.6vw;
@@ -109,8 +109,8 @@ export default {
      position: absolute;
      top: 40vw;
      left: 26.2vw;
-     width: 10.1333vw;
-     height: 13.2vw;
+     width: 9.1333vw;
+     height: 15.2vw;
    }
  }
   .l-l{
@@ -135,7 +135,7 @@ export default {
     display: flex;
     line-height: 6vw;
     /* color: #006666; */
-    color: #040404;
+    color: #a4a4a4;
     justify-content: flex-start;
     font-size: 3.9vw;
     padding:1vw 5.333vw 1vw 15vw
