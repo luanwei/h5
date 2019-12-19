@@ -22,17 +22,17 @@
       <span>◆</span> 重庆监管机构评级：
       <span>AA</span>
     </div>
-    <div :class="{'run-animation':isShow2 }" class="l-c animation-container animation-fade-left">
+    <div :class="{'run-animation':isShow2 }" class="l-c font-family-s animation-container animation-fade-left">
       ——行业排名第三
     </div>
     <div :class="{'run-animation':isShow3 }" class="l-l animation-container animation-fade-right">
       <span>◆</span>重庆赔得最快的保险公司
     </div>
-    <div :class="{'run-animation':isShow4 }" class="l-c animation-container animation-fade-left">
+    <div :class="{'run-animation':isShow4 }" class="l-c font-family-s animation-container animation-fade-left">
       <span>——</span>
       <div>报案支付时效快于同业5天，万元以下小额案件快于同业1天</div>
     </div>
-    <div :class="{'run-animation':isShow5 }" class="l-l animation-container animation-fade-right">
+    <div :class="{'run-animation':isShow5 }" class="l-l  animation-container animation-fade-right">
       <span>◆</span>重庆唯一保持零投诉的保险公司
     </div>
 
@@ -153,6 +153,7 @@ export default {
   height: 8vw;
   padding-left: 12vw;
   font-size: 4.5vw;
+  font-weight: 600;
   color: #006666;
   margin-top: 2vh;
   span {
@@ -160,7 +161,7 @@ export default {
   }
    :nth-of-type(2) {
     color: red;
-    font-size: 4vw;
+    font-size: 4.5vw;
     font-weight: 600;
   }
 }
@@ -168,10 +169,9 @@ export default {
 .l-c {
   display: flex;
   line-height: 6vw;
-  /* color: #006666; */
-  color: #404040;
+  color: #006666;
   justify-content: flex-start;
-  font-size: 3.9vw;
+  font-size: 3.8vw;
   padding: 1vw 5.333vw 1vw 15vw
 }
 

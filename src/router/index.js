@@ -80,7 +80,7 @@ export const constantRouterMap = [{
         component: () =>
             import ('@/views/smrw/index'),
         meta: {
-            title: '服务品质',
+            title: '使命任务',
             index: 2
         }
     },

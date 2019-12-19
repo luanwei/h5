@@ -8,7 +8,7 @@
     </div>
     <div
       :class="{'run-animation':isShow1 }"
-      class="describe animation-container animation-fade-right"
+      class="describe font-family-s animation-container animation-fade-right"
     >
       总公司成立于2008年9月
       <br />总部设在北京
@@ -20,12 +20,12 @@
     <div :class="{'run-animation':isShow2 }" class="b-table animation-container animation-fade-up">
       <div @click="goPage('yyzz')">
         <img src="@/assets/image/d1.png" alt />
-        <span>优质服务</span>
+        <span>优异资质</span>
       </div>
       <div @click="goPage('fwpz')">
         <img src="@/assets/image/d2.png" alt /><span>服务品质</span></div>
       <div @click="goPage('smrw')">
-        <img src="@/assets/image/d3.png" alt /><span>使命服务</span></div>
+        <img src="@/assets/image/d3.png" alt /><span>使命任务</span></div>
     </div>
   </div>
 </template>
@@ -137,8 +137,8 @@ export default {
   margin-right: 7%;
   margin-left: 30%;
   text-align: left;
-  color: #040404;
-  font-size: 4.1vw;
+  color: #a4a4a4;
+  font-size: 3.8vw;
   line-height: 1.8;
   letter-spacing: 1px;
 }

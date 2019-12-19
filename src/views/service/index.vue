@@ -15,8 +15,8 @@
     </div>
     <div class="content-box margin-h-10">
       <h5>工会协同</h5>
-      <p class="font-size-16 color-black-8 margin-top-10">在各级工会设立“服务监督员”，维权监督，让您更安心、更放心。</p>
-      <p class="font-size-16 color-black-8 margin-top-10">共同打造电力职工独享的服务优势与价值优势，让特别优待惠及每一位职工。</p>
+      <p class="font-size-16 font-family-s color-black-a margin-top-8">在各级工会设立“服务监督员”，维权监督，让您更安心、更放心。</p>
+      <p class="font-size-16 font-family-s color-black-a margin-top-8">共同打造电力职工独享的服务优势与价值优势，让特别优待惠及每一位职工。</p>
     </div>
   </div>
 </template>
@@ -47,7 +47,7 @@ export default {
 
 .list-box {
   width: 80%;
-  margin: -5% 10% 0% 10%;
+  margin: -10% 10% 0% 10%;
   display: inline-block;
   font-size: 1.8rem;
   color: #006666;
@@ -63,5 +63,9 @@ export default {
   padding: 0.6rem 0;
   border-radius: 0.6rem;
   cursor: pointer;
+}
+
+.content-box h5{
+  font-size: 1.8rem;
 }
 </style>

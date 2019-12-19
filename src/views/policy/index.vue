@@ -3,12 +3,12 @@
     <img class="t-banner" src="@/assets/image/policy.jpg">
     <div class="content-box reset-box">
       <h5 class="reset-title animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }">不只是价格更优！</h5>
-      <p class="color-black-8 animation-container animation-fade-left" v-bind:class="{'run-animation':isShow1 }">——合规前提下，保持最优价格</p>
+      <p class="color-black-8 font-family-s animation-container animation-fade-left" v-bind:class="{'run-animation':isShow1 }">——合规前提下，保持最优价格</p>
       <h5 class="reset-title animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }">更重要的是</h5>
       <div class="text-box animation-container animation-fade-up" v-bind:class="{'run-animation':isShow1 }">
-        <p class="color-black-8">赔付更宽松、更简捷</p>
-        <p class="color-black-8">服务更全面、更贴心</p>
-        <p class="color-black-8">价值更丰富、更优厚</p>
+        <p class="color-black-8 font-family-s">赔付更宽松、更简捷</p>
+        <p class="color-black-8 font-family-s">服务更全面、更贴心</p>
+        <p class="color-black-8 font-family-s">价值更丰富、更优厚</p>
       </div>
 
     </div>
@@ -51,7 +51,7 @@ export default {
 .t-banner {
   display: block;
   width: 100%;
- /* height: 33%;*/
+ height: 38%;
 }
 
 .text-box{

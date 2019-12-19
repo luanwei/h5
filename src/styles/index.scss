@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: arial, "Microsoft Yahei", 微软雅黑;
+    font-family: "Microsoft Yahei", 微软雅黑;
 }
 
 .pull-right {
@@ -107,7 +107,7 @@ html {
 }
 
 .content-box {
-    margin: 0 5%;
+    margin: 0 4%;
 }
 
 .content-box h5 {
@@ -130,14 +130,26 @@ html {
     margin-top: 1rem;
 }
 
+.margin-top-8 {
+    margin-top: 0.8rem;
+}
+
 .font-size-16 {
-    font-size: 1.6rem!important;
+    font-size: 1.5rem!important;
 }
 
 .color-black-8 {
     color: #040404!important;
 }
 
+.color-black-a{
+    color:#a0a0a0!important;
+}
+
+
+.font-family-s{
+    font-family: SimSun,PingFang SC,'宋体';
+}
 
 /* 动画 */
 

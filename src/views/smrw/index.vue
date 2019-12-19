@@ -6,13 +6,13 @@
     </div>
     <div :class="{'run-animation':isShow1 }" class="slogan animation-container animation-fade-up">
       服务好主业
-      <div>为电力行业财产及运营保驾护航</div>
+      <div class="font-family-s">为电力行业财产及运营保驾护航</div>
     </div>
     <div :class="{'run-animation':isShow2 }" class="slogan animation-container animation-fade-up">
       服务好职工
-      <div>为电力职工解后顾之忧 提高归属感</div>
+      <div class="font-family-s">为电力职工解后顾之忧 提高归属感</div>
     </div>
-    <div :class="{'run-animation':isShow3 }" class="describe animation-container animation-fade-up">
+    <div :class="{'run-animation':isShow3 }" class="describe font-family-s animation-container animation-fade-up">
       各级工会协同，共同打造电力职工独享的服务优势与价值优势
     </div>
 
@@ -61,7 +61,7 @@ export default {
   .title {
     font-size: 4.533vw;
     line-height: 6vw;
-    color: #006666;
+    color: #040404;
     padding: 0 5.3vw;
     text-align: left;
     margin: 4vw;
@@ -75,7 +75,7 @@ export default {
     padding-left: 16vw;
     div{
       padding-left: 10vw;
-      font-size: 4vw;
+      font-size: 3.8vw;
       color: #040404;
       font-weight: normal;
     }
@@ -87,8 +87,8 @@ export default {
    /*  margin-right: 10%;
     margin-left: 30%; */
     text-align: left;
-    color: #040404;
-    font-size: 4vw;
+    color: #a0a0a0;
+    font-size: 3.8vw;
     line-height: 1.8;
     letter-spacing: 1px;
     padding-left: 26vw;

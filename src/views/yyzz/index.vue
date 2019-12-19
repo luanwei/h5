@@ -2,25 +2,25 @@
   <div class="view">
     <img class="t-banner" src="../../assets/image/yyzz_t.jpg">
     <div :class="{'run-animation':isShow1 }" class="l-red animation-container animation-fade-right">
-      <i>★</i> 2010年获评：企业集团发展金融
+      <i>★ </i> <span class="font-family-s">2010年获评：企业集团发展金融</span>
       <span>典型成功案例</span>
     </div>
     <div :class="{'run-animation':isShow2 }" class="l-red animation-container animation-fade-right">
-      <i>★</i>2012年位列财险公司
+      <i>★</i> <span class="font-family-s">2012年位列财险公司</span>
       <span>盈利能力第一位</span>
     </div>
-    <div :class="{'run-animation':isShow3 }" class="l-right animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
+    <div :class="{'run-animation':isShow3 }" class="l-right font-family-s animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
     <div :class="{'run-animation':isShow4 }" class="l-red animation-container animation-fade-right">
-      <i>★</i> 2013年位列中
+      <i>★</i> <span class="font-family-s">2013年位列中</span>
       <span>国保险业 综合竞争力第三位</span>
     </div>
-    <div :class="{'run-animation':isShow5 }" class="l-right animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
+    <div :class="{'run-animation':isShow5 }" class="l-right font-family-s animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
     <div :class="{'run-animation':isShow6 }" class="l-red animation-container animation-fade-right">
-      <i>★</i> 2014年获评
+      <i>★</i> <span class="font-family-s">2014年获评</span>
       <span>中国价值成长十佳保险公司</span>
     </div>
     <div :class="{'run-animation':isShow7 }" class="l-red animation-container animation-fade-right">
-      <i>★</i> 公司研发的系列电网产品，被确定为
+      <i>★</i> <span class="font-family-s">公司研发的系列电网产品，被确定为</span>
       <span>行业标准</span>
     </div>
   </div>
@@ -89,7 +89,7 @@ export default {
 
 .l-red {
   width: 100%;
-  font-size: 4vw;
+  font-size: 3.85vw;
   height: 6vw;
   display: flex;
   align-items: center;
@@ -100,9 +100,9 @@ export default {
     color: red;
     margin-right: 3px;
   }
-  span {
+  span:nth-of-type(2) {
     color: red;
-    font-size: 4.5vw;
+    font-size: 4.7vw;
     font-weight: 600;
   }
 }
@@ -112,7 +112,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 4vw;
+  font-size: 3.85vw;
   text-align: right;
   padding: 5.3vw;
 }

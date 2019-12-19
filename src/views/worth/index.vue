@@ -5,18 +5,19 @@
     </div>
     <div class="wrap1">
       <p class="animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }" >在别的公司，您是一个普通的车险客户</p>
-      <p class="animation-container animation-fade-right" v-bind:class="{'run-animation':isShow1 }" >在国网英大，您就是我们贴心维护的“使命VIP”!</p>
+      <p class="animation-container animation-fade-right" v-bind:class="{'run-animation':isShow1 }" >在国网英大，您就是我们贴心维护的</p>
+      <p class="animation-container animation-fade-right"  v-bind:class="{'run-animation':isShow1 }">“使命VIP”!</p>
     </div>
     <div class="wrap2 content-box animation-container animation-fade-right" v-bind:class="{'run-animation':isShow2 }">
-      <h5>各项免费活动贯穿全年</h5>
-      <p>为期一月的“315 客户节”活动、“泰和迎春”专题服务活动、“泰和金秋”专题服务活动、“零赔付”客户关爱活动</p>
-      <h5>与德国 "伍尔特"深度合作</h5>
-      <p>
+      <h5>★ 各项免费活动贯穿全年</h5>
+      <p class="font-family-s">为期一月的“315 客户节”活动、"泰和迎春"专题服务活动、"泰和金秋"专题服务活动、“零赔付”客户关爱活动</p>
+      <h5>★ 与德国 "伍尔特"深度合作</h5>
+      <p class="font-family-s">
         联合德国顶级养活品牌“伍尔特”引领科学保养，尊享
         高端特惠（承保职工 5.5 折，未承保职工 7.5 折）
       </p>
-      <h5>与"途虎" 连锁店深度合作</h5>
-      <p>联合“途虎养车”连锁店，提供特别优待或部分免费服务（推介集“红心”，换多重价值服务）</p>
+      <h5>★ 与"途虎" 连锁店深度合作</h5>
+      <p class="font-family-s">联合“途虎养车”连锁店，提供特别优待或部分免费服务（推介集“红心”，换多重价值服务）</p>
        <div class="spec-text animation-container animation-fade-up" v-bind:class="{'run-animation':isShow3 }">我们仍在不断打造无限丰富的特惠价至服务！</div>
     </div>
    
@@ -83,7 +84,13 @@ export default {
 }
 
 .wrap1 > p:nth-of-type(1) {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.wrap1 > p:nth-of-type(3) {
+  margin-bottom: 1.5rem;
+  text-align: right;
+  font-size: 2rem;
 }
 
 .wrap2 {
@@ -92,12 +99,19 @@ export default {
 
 .wrap2 h5{
   color:#C00000;
+
+}
+
+.wrap2 p{
+  color: #a0a0a0;
+  text-indent: 2rem;
 }
 
 .spec-text{
-  font-size: 2rem;
+  font-size: 1.76rem;
   text-align:center;
-  margin-top: 1.8rem;
   color:#006666;
+  text-indent: 0px;
+  margin: 2rem -5% 0 -5%;
 }
 </style>

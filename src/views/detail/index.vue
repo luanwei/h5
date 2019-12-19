@@ -5,7 +5,7 @@
                 <div class="page-title">{{item.title}}</div>
                 <div v-for="(child,index1) in item.list" :key="index1">
                     <h5>★ {{child.title}}</h5>
-                    <p v-html="child.content"></p>
+                    <p class="font-family-s" v-html="child.content"></p>
                     <img v-for="(item1,index) in child.images" :key="index" v-if="item1" :src="item1" alt="">
                 </div>
             </div>
