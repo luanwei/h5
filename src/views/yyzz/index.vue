@@ -11,8 +11,8 @@
     </div>
     <div :class="{'run-animation':isShow3 }" class="l-right font-family-s animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
     <div :class="{'run-animation':isShow4 }" class="l-red animation-container animation-fade-right">
-      <i>★</i> <span class="font-family-s">2013年位列中</span>
-      <span>国保险业 综合竞争力第三位</span>
+      <i>★</i> <span class="font-family-s">2013年位列中国保险业</span>
+      <span> 综合竞争力第三位</span>
     </div>
     <div :class="{'run-animation':isShow5 }" class="l-right font-family-s animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
     <div :class="{'run-animation':isShow6 }" class="l-red animation-container animation-fade-right">
