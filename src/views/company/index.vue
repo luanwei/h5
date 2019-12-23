@@ -20,19 +20,19 @@
     <div :class="{'run-animation':isShow2 }" class="b-table animation-container animation-fade-up">
       <div @click="goPage('yyzz')">
         <div class="bk-r">
-          <img src="@/assets/image/d1.png" alt/>
+          <img src="@/assets/image/c_1.png" alt/>
         </div>
 
         <span>优异资质</span>
       </div>
       <div @click="goPage('fwpz')">
         <div class="bk-b">
-          <img src="@/assets/image/d2.png" alt/>
+          <img src="@/assets/image/c_2.png" alt/>
         </div>
         <span>服务品牌</span></div>
       <div @click="goPage('smrw')">
         <div class="bk-y">
-          <img src="@/assets/image/d3.png" alt/>
+          <img src="@/assets/image/c_3.png" alt/>
         </div>
         <span>使命任务</span></div>
     </div>
@@ -164,9 +164,9 @@
     background-color: #e17327;
   }
   .bk-b{
-    background-color: #76e19a;
+    background-color: #8265e9;
   }
   .bk-y{
-    background-color: #a8e113;
+    background-color: #668d75;
   }
 </style>
