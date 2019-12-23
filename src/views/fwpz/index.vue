@@ -20,15 +20,15 @@
     </div>
     <div :class="{'run-animation':isShow1 }" class="l-l animation-container animation-fade-right">
       <span>◆</span> 重庆监管机构评级：
-      <span>AA</span>
+      <span class="font-r">AA</span>
     </div>
-    <div :class="{'run-animation':isShow2 }" class="l-c font-family-s animation-container animation-fade-left">
+    <div :class="{'run-animation':isShow2 }" class="l-c font-b font-family-s animation-container animation-fade-left">
       ——行业排名第三
     </div>
     <div :class="{'run-animation':isShow3 }" class="l-l animation-container animation-fade-right">
       <span>◆</span>重庆赔得最快的保险公司
     </div>
-    <div :class="{'run-animation':isShow4 }" class="l-c font-family-s animation-container animation-fade-left">
+    <div :class="{'run-animation':isShow4 }" class="l-c font-b font-family-s animation-container animation-fade-left">
       <span>——</span>
       <div>报案支付时效快于同业5天，万元以下小额案件快于同业1天</div>
     </div>
@@ -85,15 +85,17 @@ export default {
 </script>
 <style lang="scss" scoped>
 .top {
-  display: block;
   position: relative;
   height: 29vw;
   z-index: 1;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  width: 75%;
-  margin: 0 12.5%;
+  justify-content: flex-end;
+  width: 90%;
+  margin: 0 5%;
+  img{
+    margin-left: 3vw;
+  }
   /* margin-top: -10vw; */
   .map-1 {
     position: absolute;
@@ -142,7 +144,7 @@ export default {
     left: 35.2vw;*/
     /* width: 9.1333vw; */
     width: auto;
-    height: 27vw;
+    height: 26vw;
   }
 }
 
@@ -161,7 +163,7 @@ export default {
   }
    :nth-of-type(2) {
     color: red;
-    font-size: 4.5vw;
+    font-size: 5.6vw;
     font-weight: 600;
   }
 }
@@ -187,7 +189,7 @@ export default {
 }
 
 .swiper-container {
-  
+
 }
 
 .swiper-slide img {

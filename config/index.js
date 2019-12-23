@@ -9,18 +9,19 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-     proxyTable: {
-       '/mdm': {
-         target: 'http://10.15.208.12:8082',
-         pathRewrite: {
-             '^mdm': '/mdm'
-         }
-       }
-     },
+    // proxyTable: {
+    //   '/mdm': {
+    //     target: 'http://10.15.208.12:8082',
+    //     pathRewrite: {
+    //       '^mdm': '/mdm'
+    //     }
+    //   }
+    // },
 
     // Various Dev Server settings
-     host: '10.15.208.12', // can be overwritten by process.env.HOST
-    //host:'localhost',
+    // host: '10.15.208.12', // can be overwritten by process.env.HOST
+
+    host:'localhost',
     port: 3001, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: true,
     errorOverlay: true,

@@ -1,27 +1,27 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="../../assets/image/yyzz_t.jpg">
+    <img class="t-banner" src="../../assets/image/cpfw_img1.jpg">
     <div :class="{'run-animation':isShow1 }" class="l-red animation-container animation-fade-right">
-      <i>★ </i> <span class="font-family-s">2010年获评：企业集团发展金融</span>
-      <span>典型成功案例</span>
+      <i class="font-r">★ </i> <span class="font-family-s">2010年获评：企业集团发展金融</span>
+      <span class="font-r">典型成功案例</span>
     </div>
     <div :class="{'run-animation':isShow2 }" class="l-red animation-container animation-fade-right">
-      <i>★</i> <span class="font-family-s">2012年位列财险公司</span>
-      <span>盈利能力第一位</span>
+      <i class="font-r">★</i> <span class="font-family-s">2012年位列财险公司</span>
+      <span class="font-r">盈利能力第一位</span>
     </div>
     <div :class="{'run-animation':isShow3 }" class="l-right font-family-s animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
     <div :class="{'run-animation':isShow4 }" class="l-red animation-container animation-fade-right">
-      <i>★</i> <span class="font-family-s">2013年位列中国保险业</span>
-      <span> 综合竞争力第三位</span>
+      <i class="font-r">★</i> <span class="font-family-s">2013年位列中国保险业</span>
+      <span class="font-r"> 综合竞争力第三位</span>
     </div>
     <div :class="{'run-animation':isShow5 }" class="l-right font-family-s animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
     <div :class="{'run-animation':isShow6 }" class="l-red animation-container animation-fade-right">
-      <i>★</i> <span class="font-family-s">2014年获评</span>
-      <span>中国价值成长十佳保险公司</span>
+      <i class="font-r">★</i> <span class="font-family-s">2014年获评</span>
+      <span class="font-r">中国价值成长十佳保险公司</span>
     </div>
     <div :class="{'run-animation':isShow7 }" class="l-red animation-container animation-fade-right">
-      <i>★</i> <span class="font-family-s">公司研发的系列电网产品，被确定为</span>
-      <span>行业标准</span>
+      <i class="font-r">★</i> <span class="font-family-s">公司研发的系列电网产品，被确定为</span>
+      <span class="font-r">行业标准</span>
     </div>
   </div>
 </template>
@@ -74,10 +74,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .view {
-  background-image: url(../../assets/image/car.jpg);
-  background-size: 45%;
-  background-repeat: no-repeat;
-  background-position: 95% 95%;
+  /*background-image: url(../../assets/image/car.jpg);*/
+  /*background-size: 45%;*/
+  /*background-repeat: no-repeat;*/
+  /*background-position: 95% 95%;*/
 }
 
 .t-banner {
@@ -97,11 +97,11 @@ export default {
   padding: 5.3vw;
   i {
     font-style: normal;
-    color: red;
-    margin-right: 3px;
+    margin-right: 3.85vw;
+    font-size: 4vw;
   }
   span:nth-of-type(2) {
-    color: red;
+    /*margin-left: 3.85vw;*/
     font-size: 4.7vw;
     font-weight: 600;
   }
@@ -114,6 +114,6 @@ export default {
   justify-content: flex-end;
   font-size: 3.85vw;
   text-align: right;
-  padding: 5.3vw;
+  padding:3vw 5.3vw;
 }
 </style>

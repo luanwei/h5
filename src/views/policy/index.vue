@@ -1,8 +1,8 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="@/assets/image/policy.jpg">
+    <img class="t-banner" src="@/assets/image/yyzz_t.jpg">
     <div class="content-box reset-box">
-      <h5 class="reset-title animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }">不只是价格更优！</h5>
+      <h5 class="reset-title font-r animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }">不只是价格更优！</h5>
       <p class="color-black-8 font-family-s animation-container animation-fade-left" v-bind:class="{'run-animation':isShow1 }">——合规前提下，保持最优价格</p>
       <h5 class="reset-title  color-green-6 animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }">更重要的是</h5>
       <div class="text-box animation-container animation-fade-up" v-bind:class="{'run-animation':isShow1 }">
@@ -48,19 +48,26 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.t-banner {
-  display: block;
-  width: 100%;
- height: 38%;
-}
+  .view {
+    background-image: url(../../assets/image/car.jpg);
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+  }
+
+  .t-banner {
+    display: block;
+    width: 100%;
+    /*height: 38%;*/
+  }
 
 .text-box{
-  margin-left: 5%;
+  /*margin-left: 12%;*/
 }
 
 .reset-title {
   margin-top: 15%;
-  font-size: 2rem;
+  font-size: 6.4vw;
   color:red;
 }
 
@@ -70,6 +77,6 @@ export default {
 
 .reset-box p {
   font-size: 1.5rem;
-  padding-left: 10%;
+  padding-left: 20%;
 }
 </style>

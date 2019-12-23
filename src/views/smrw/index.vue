@@ -1,6 +1,6 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="@/assets/image/cpfw_img1.jpg">
+    <img class="t-banner" src="@/assets/image/policy.jpg">
     <div class="title">
       我们的使命——
     </div>
@@ -55,7 +55,7 @@ export default {
   .t-banner {
     display: block;
     width: 100%;
-   /* height: 55vw;*/
+    height: 65vw;
   }
 
   .title {
@@ -74,7 +74,7 @@ export default {
     line-height: 2;
     padding-left: 16vw;
     div{
-      padding-left: 10vw;
+      padding-left: 17.6vw;
       font-size: 3.8vw;
       color: #040404;
       font-weight: normal;
@@ -82,7 +82,7 @@ export default {
   }
 
   .describe {
-    width: 88%;
+    width: 95%;
     margin-top: 8vw;
    /*  margin-right: 10%;
     margin-left: 30%; */
@@ -91,6 +91,6 @@ export default {
     font-size: 3.8vw;
     line-height: 1.8;
     letter-spacing: 1px;
-    padding-left: 26vw;
+    padding-left: 55vw;
   }
 </style>

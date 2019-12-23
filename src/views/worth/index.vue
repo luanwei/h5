@@ -1,13 +1,13 @@
 <template>
   <div class="view">
     <div class="img-box">
-      <img src="@/assets/image/worth.png" />
+      <img src="@/assets/image/1223.jpg" />
     </div>
-    <div class="wrap1">
-      <p class="animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }" >在别的公司，您是一个普通的车险客户</p>
-      <p class="animation-container animation-fade-right" v-bind:class="{'run-animation':isShow1 }" >在国网英大，您就是我们贴心维护的</p>
-      <p class="animation-container animation-fade-right"  v-bind:class="{'run-animation':isShow1 }">“使命VIP”!</p>
-    </div>
+    <!--<div class="wrap1">-->
+      <!--<p class="animation-container animation-fade-right" v-bind:class="{'run-animation':isShow }" >在别的公司，您是一个普通的车险客户</p>-->
+      <!--<p class="animation-container animation-fade-right" v-bind:class="{'run-animation':isShow1 }" >在国网英大，您就是我们贴心维护的</p>-->
+      <!--<p class="animation-container animation-fade-right"  v-bind:class="{'run-animation':isShow1 }">“使命VIP”!</p>-->
+    <!--</div>-->
     <div class="wrap2 content-box animation-container animation-fade-right" v-bind:class="{'run-animation':isShow2 }">
       <h5>★ 各项免费活动贯穿全年</h5>
       <p class="font-family-s">为期一月的“315 客户节”活动、"泰和迎春"专题服务活动、"泰和金秋"专题服务活动、“零赔付”客户关爱活动</p>
@@ -18,9 +18,9 @@
       </p>
       <h5>★ 与"途虎" 连锁店深度合作</h5>
       <p class="font-family-s">联合“途虎养车”连锁店，提供特别优待或部分免费服务（推介集“红心”，换多重价值服务）</p>
-       <div class="spec-text animation-container animation-fade-up" v-bind:class="{'run-animation':isShow3 }">我们仍在不断打造无限丰富的特惠价至服务！</div>
+       <div class="spec-text animation-container animation-fade-up" v-bind:class="{'run-animation':isShow3 }">我们仍在不断打造无限丰富的特惠价值服务！</div>
     </div>
-   
+
   </div>
 </template>
 
@@ -44,7 +44,7 @@ export default {
     showAnimation() {
       setTimeout(() => {
         this.isShow = true;
-        
+
       }, 700);
 
       setTimeout(() => {
@@ -67,9 +67,7 @@ export default {
   margin-bottom: 2%;
 }
 .img-box img {
-  width: 40%;
-  
-  margin-top: 4%;
+  width: 100%;
 }
 
 .wrap1 {
@@ -104,11 +102,12 @@ export default {
 
 .wrap2 p{
   color: #a0a0a0;
-  text-indent: 2rem;
+  padding-left: 2rem;
+  /*text-indent: 2rem;*/
 }
 
 .spec-text{
-  font-size: 1.76rem;
+  font-size: 3.2vw;
   text-align:center;
   color:#006666;
   text-indent: 0px;

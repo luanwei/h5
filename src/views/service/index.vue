@@ -1,16 +1,56 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="@/assets/image/service.jpg" />
+    <img class="t-banner" src="@/assets/image/service.jpg"/>
     <div class="list-box">
       <ul class="list">
-        <li @click="goPage('zdfw')">专设驻点服务</li>
-        <li @click="goPage('cpfw')">专属产品服务</li>
-        <li @click="goPage('lptd')">专属理赔通道</li>
-        <li @click="goPage('dljy')">全国道路救援</li>
-        <li @click="goPage('jsfw')">代办检审服务</li>
-        <li @click="goPage('ajfw')">定期安检服务</li>
-        <li @click="goPage('cgj')">“车管家”服务</li>
-        <li @click="goPage('zlfw')">索赔助理服务</li>
+        <li @click="goPage('zdfw')">
+          <div class="bk-s1">
+            <img src="@/assets/image/s_1.png">
+          </div>
+          <span>专设驻点服务</span>
+        </li>
+        <li @click="goPage('cpfw')">
+          <div class="bk-s2">
+            <img src="@/assets/image/s_2.png">
+          </div>
+          <span>专属产品服务</span>
+        </li>
+        <li @click="goPage('lptd')">
+          <div class="bk-s3">
+            <img src="@/assets/image/s_3.png">
+          </div>
+          <span>专属理赔通道</span>
+        </li>
+        <li @click="goPage('dljy')">
+          <div class="bk-s4">
+            <img src="@/assets/image/s_4.png">
+          </div>
+          <span>全国道路救援</span>
+        </li>
+        <li @click="goPage('jsfw')">
+          <div class="bk-s5">
+            <img src="@/assets/image/s_5.png">
+          </div>
+          <span>代办检审服务</span>
+        </li>
+        <li @click="goPage('ajfw')">
+          <div class="bk-s6">
+            <img src="@/assets/image/s_6.png">
+          </div>
+          <span>定期安检服务</span>
+        </li>
+        <li @click="goPage('cgj')">
+          <div class="bk-s7">
+            <img src="@/assets/image/s_7.png">
+          </div>
+          <span>“车管家”服务</span>
+        </li>
+        <li @click="goPage('zlfw')">
+          <div class="bk-s8">
+            <img src="@/assets/image/s_8.png">
+          </div>
+          <span>索赔助理服务</span>
+        </li>
       </ul>
     </div>
     <div class="content-box margin-h-10">
@@ -54,18 +94,75 @@ export default {
 }
 
 .list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
-  width: 45%;
+  width: 16vw;
+  height: 23vw;
   float: left;
   text-align: center;
   margin: 0.8rem 2.5%;
-  border: 1px solid rgba(0, 102, 102, 0.5);
+  /*border: 1px solid rgba(0, 102, 102, 0.5);*/
   padding: 0.6rem 0;
   border-radius: 0.6rem;
   cursor: pointer;
+  margin-top: 3.2vw;
+}
+.list li div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 12vw;
+  border-radius:  4.6vw;
+}
+.list li div img{
+  width: 6vw;
+  height: 6vw;
+
+}
+.list li span{
+  font-size: 4vw;
+}
+.content-box h5{
+  font-size: 2rem;
+
 }
 
-.content-box h5{
-  font-size: 1.8rem;
+.content-box p {
+  padding-left: 3rem;
+}
+
+.bk-s1 {
+  background-color: #87CEEB;
+}
+
+.bk-s2 {
+  background-color: #D2691E;
+}
+
+.bk-s3 {
+  background-color: #DDA0DD;
+}
+
+.bk-s4 {
+  background-color: #FF4500;
+}
+
+.bk-s5 {
+  background-color: #A52A2A;
+}
+
+.bk-s6 {
+  background-color: #FF8C00;
+}
+
+.bk-s7 {
+  background-color: #FFD700;
+}
+
+.bk-s8 {
+  background-color: #1E90FF;
 }
 </style>

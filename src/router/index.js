@@ -69,7 +69,7 @@ export const constantRouterMap = [{
         component: () =>
             import ('@/views/fwpz/index'),
         meta: {
-            title: '服务品质',
+            title: '服务品牌',
             index: 2
         }
     },
