@@ -144,7 +144,7 @@ export default {
     left: 35.2vw;*/
     /* width: 9.1333vw; */
     width: auto;
-    height: 26vw;
+    height: 25.5vw;
   }
 }
 

@@ -188,7 +188,7 @@ export default {
   .page-title {
     font-size: 2.2rem;
     text-align: center;
-    color: #C00000;
+    color: #C00400;
 
     margin: 1.5rem 0;
     font-weight: 700;

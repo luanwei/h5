@@ -96,7 +96,7 @@ export default {
 }
 
 .wrap2 h5{
-  color:#C00000;
+  color:#C00400;
 
 }
 
