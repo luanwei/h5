@@ -96,6 +96,30 @@ export const constantRouterMap = [{
             index: 2
         }
     },
+
+    // 车管家服务
+    {
+        path: '/cgjfw',
+        name: 'CGJFW',
+        component: () =>
+            import ('@/views/cgjfw/index'),
+        meta: {
+            title: '服务详情',
+            index: 2
+        }
+    },
+
+    // 服务详情
+    {
+        path: '/spzlfw',
+        name: 'SPZLFW',
+        component: () =>
+            import ('@/views/spzlfw/index'),
+        meta: {
+            title: '服务详情',
+            index: 2
+        }
+    },
 ]
 
 export default new Router({

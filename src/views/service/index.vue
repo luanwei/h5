@@ -1,53 +1,53 @@
 <template>
   <div class="view">
-    <img class="t-banner" src="@/assets/image/service.jpg"/>
+    <img class="t-banner" src="@/assets/image/service.jpg" />
     <div class="list-box">
       <ul class="list">
         <li @click="goPage('zdfw')">
           <div class="bk-s1">
-            <img src="@/assets/image/s_1.png">
+            <img src="@/assets/image/s_1.png" />
           </div>
           <span>专设驻点服务</span>
         </li>
         <li @click="goPage('cpfw')">
           <div class="bk-s2">
-            <img src="@/assets/image/s_2.png">
+            <img src="@/assets/image/s_2.png" />
           </div>
           <span>专属产品服务</span>
         </li>
         <li @click="goPage('lptd')">
           <div class="bk-s3">
-            <img src="@/assets/image/s_3.png">
+            <img src="@/assets/image/s_3.png" />
           </div>
           <span>专属理赔通道</span>
         </li>
         <li @click="goPage('dljy')">
           <div class="bk-s4">
-            <img src="@/assets/image/s_4.png">
+            <img src="@/assets/image/s_4.png" />
           </div>
           <span>全国道路救援</span>
         </li>
         <li @click="goPage('jsfw')">
           <div class="bk-s5">
-            <img src="@/assets/image/s_5.png">
+            <img src="@/assets/image/s_5.png" />
           </div>
           <span>代办检审服务</span>
         </li>
         <li @click="goPage('ajfw')">
           <div class="bk-s6">
-            <img src="@/assets/image/s_6.png">
+            <img src="@/assets/image/s_6.png" />
           </div>
           <span>定期安检服务</span>
         </li>
         <li @click="goPage('cgj')">
           <div class="bk-s7">
-            <img src="@/assets/image/s_7.png">
+            <img src="@/assets/image/s_7.png" />
           </div>
-          <span>“车管家”服务</span>
+          <span>"车管家"服务</span>
         </li>
         <li @click="goPage('zlfw')">
           <div class="bk-s8">
-            <img src="@/assets/image/s_8.png">
+            <img src="@/assets/image/s_8.png" />
           </div>
           <span>索赔助理服务</span>
         </li>
@@ -55,8 +55,12 @@
     </div>
     <div class="content-box margin-h-10">
       <h5>工会协同</h5>
-      <p class="font-size-16 font-family-s color-black-a margin-top-8">在各级工会设立“服务监督员”，维权监督，让您更安心、更放心。</p>
-      <p class="font-size-16 font-family-s color-black-a margin-top-8">共同打造电力职工独享的服务优势与价值优势，让特别优待惠及每一位职工。</p>
+      <p
+        class="font-size-16 font-family-s color-black-a margin-top-8"
+      >在各级工会设立“服务监督员”，维权监督，让您更安心、更放心。</p>
+      <p
+        class="font-size-16 font-family-s color-black-a margin-top-8"
+      >共同打造电力职工独享的服务优势与价值优势，让特别优待惠及每一位职工。</p>
     </div>
   </div>
 </template>
@@ -72,7 +76,14 @@ export default {
 
   methods: {
     goPage(type) {
-      this.$router.push({ path: "/detail", query: { type: type } });
+      if (type == "zlfw") {
+        this.$router.push({ path: "/spzlfw"});
+      }else if (type == "cgj") {
+        this.$router.push({ path: "/cgjfw"});
+      }else{
+this.$router.push({ path: "/detail", query: { type: type } });
+      }
+      
     }
   }
 };
@@ -81,7 +92,7 @@ export default {
 .t-banner {
   display: block;
   width: 80%;
-  height:auto;
+  height: auto;
   margin-left: 10%;
 }
 
@@ -109,25 +120,24 @@ export default {
   cursor: pointer;
   margin-top: 3.2vw;
 }
-.list li div{
+.list li div {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 12vw;
   height: 12vw;
-  border-radius:  4.6vw;
+  border-radius: 4.6vw;
 }
-.list li div img{
+.list li div img {
   width: 6vw;
   height: 6vw;
-
 }
-.list li span{
+.list li span {
   font-size: 4vw;
+  padding: 0 1vw;
 }
-.content-box h5{
+.content-box h5 {
   font-size: 2rem;
-
 }
 
 .content-box p {
@@ -135,34 +145,34 @@ export default {
 }
 
 .bk-s1 {
-  background-color: #87CEEB;
+  background-color: #87ceeb;
 }
 
 .bk-s2 {
-  background-color: #D2691E;
+  background-color: #d2691e;
 }
 
 .bk-s3 {
-  background-color: #DDA0DD;
+  background-color: #dda0dd;
 }
 
 .bk-s4 {
-  background-color: #FF4500;
+  background-color: #ff4500;
 }
 
 .bk-s5 {
-  background-color: #A52A2A;
+  background-color: #a52a2a;
 }
 
 .bk-s6 {
-  background-color: #FF8C00;
+  background-color: #ff8c00;
 }
 
 .bk-s7 {
-  background-color: #FFD700;
+  background-color: #ffd700;
 }
 
 .bk-s8 {
-  background-color: #1E90FF;
+  background-color: #1e90ff;
 }
 </style>

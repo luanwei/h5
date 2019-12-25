@@ -107,7 +107,7 @@ export default {
 }
 
 .spec-text{
-  font-size: 3.2vw;
+  font-size: 4.5vw;
   text-align:center;
   color:#006666;
   text-indent: 0px;
