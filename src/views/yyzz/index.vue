@@ -2,7 +2,7 @@
   <div class="view">
     <img class="t-banner" src="../../assets/image/cpfw_img1.jpg">
     <div :class="{'run-animation':isShow1 }" class="l-red animation-container animation-fade-right">
-      <i class="font-r">★ </i> <span class="font-family-s">2010年获评：企业集团发展金融</span>
+      <i class="font-r">★ </i> <span class="font-family-s">2010年获评企业集团发展金融</span>
       <span class="font-r">典型成功案例</span>
     </div>
     <div :class="{'run-animation':isShow2 }" class="l-red animation-container animation-fade-right">
@@ -114,6 +114,6 @@ export default {
   justify-content: flex-end;
   font-size: 3.85vw;
   text-align: right;
-  padding:3vw 5.3vw;
+  padding:2vw 5.3vw 5.3vw 5.3vw
 }
 </style>

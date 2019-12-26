@@ -1,13 +1,17 @@
 <template>
   <div class="view">
-    <div class="content-box reset-box">
+    <div class="reset-box">
       <div class="" v-for="(item,index) in DataList" v-if="item.type==currentType" :key="index">
-        <div class="page-title">{{item.title}}</div>
-        <img v-for="(banner,itemIndex) in item.banner" :key="'b'+ itemIndex" v-if="banner" :src="banner" alt="">
-        <div v-for="(child,index1) in item.list" :key=" 'l'+index1">
+        <div style="font-size:0;">
+          <img v-for="(banner,itemIndex) in item.banner" :key="'b'+ itemIndex" v-if="banner" :src="banner" alt="">
+        <div class="banner-line"></div>
+        </div>
+        <div class="wrap-box">
+          <div v-for="(child,index1) in item.list" :key=" 'l'+index1">
           <h5>★ {{child.title}}</h5>
           <p class="font-family-s" v-html="child.content"></p>
           <img v-for="(item1,index2) in child.images" :key="'c'+index2" v-if="item1" :src="item1" alt="">
+        </div>
         </div>
       </div>
 
@@ -25,7 +29,7 @@ export default {
         {
           type: "zdfw",
           title: "专设驻点服务",
-          banner: [require('@/assets/image/zdfw_img1.png')],
+          banner: [require('@/assets/image/zszdfw.png')],
           list: [
             {
               title: '专设驻点服务 服务就在身边',
@@ -42,7 +46,7 @@ export default {
         {
           type: "cpfw",
           title: "专属产品服务",
-          banner: [require('@/assets/image/cpfw_img1.jpg')],
+          banner: [require('@/assets/image/zscpfw.png')],
           list: [
             {
               title: '电力职工综合保障计划（组合）',
@@ -72,14 +76,13 @@ export default {
             {
               title: '电力职工“四季安泰”个人意外险',
               content: "保障电力职工个人的人身意外伤害事故，包含常规的意外身故残疾和烧烫伤（10万）、意外伤害医疗（0.5万），还扩展了住院补贴0.72万。每份保费118元/年。",
-              // images: [require('@/assets/image/cpfw_img1.jpg')]
             },
           ]
         },
         {
           type: "lptd",
           title: "专属理赔通道",
-          banner: [require('@/assets/image/lptd_img1.png')],
+          banner: [require('@/assets/image/zslptd.png')],
           list: [
             {
 
@@ -106,6 +109,7 @@ export default {
         {
           type: "jsfw",
           title: "代办大小年审  无需提前预约",
+          banner: [require('@/assets/image/dbjsfw.png')],
           list: [{
 
             title: '绿色通道联系',
@@ -125,6 +129,7 @@ export default {
         }, {
           type: "dljy",
           title: "全国道路救援  不限次数里程",
+          banner: [require('@/assets/image/qgdljy.png')],
           list: [{
 
             title: '绿色通道联系',
@@ -143,7 +148,7 @@ export default {
         }, {
           type: "ajfw",
           title: "每年安全监测  六大核心系统",
-          banner: [require('@/assets/image/zdfw_img2.jpg')],
+          banner: [require('@/assets/image/dqajfw.png')],
           list: [{
 
             title: '集中开展活动',
@@ -176,7 +181,6 @@ export default {
 
   .reset-box img {
     width: 100%;
-    margin-top: 1rem;
   }
 
   .reset-box h5 {
@@ -185,12 +189,9 @@ export default {
     color: #006666;
   }
 
-  .page-title {
-    font-size: 2.2rem;
-    text-align: center;
-    color: #C00400;
 
-    margin: 1.5rem 0;
-    font-weight: 700;
+
+  .wrap-box{
+    margin: 0 4%;
   }
 </style>

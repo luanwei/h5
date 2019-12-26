@@ -100,7 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*border-top: 1px solid #D5D5D5;*/
+    margin-bottom: 3vw;
 
     >div {
       flex: 1;
@@ -110,19 +110,18 @@
       flex-direction: column;
       height: 20.4vw;
       color: rgba(0, 102, 102, 0.8);
-      /*  border-right: 1px solid #040404; */
-      font-size: 2.5vw;
+      font-size: 3.5vw;
       font-weight: 600;
       div{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 12vw;
-        height: 12vw;
+        width: 13vw;
+        height: 13vw;
         border-radius: 4.6vw;
 
         img {
-          width: 7vw;
+          width: 8.5vw;
         }
       }
     }

@@ -1,6 +1,7 @@
 <template>
   <div class="view">
     <img class="t-banner" src="@/assets/image/spzlfw.png" />
+    <div class="banner-line"></div>
     <div class="title">
       <span class="spec">索赔助理服务</span>
     </div>
@@ -53,7 +54,7 @@ export default {
 .t-banner {
   display: block;
   width: 100%;
-  height: 65vw;
+  height: auto;
 }
 
 .title {

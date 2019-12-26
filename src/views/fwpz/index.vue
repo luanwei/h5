@@ -123,28 +123,17 @@ export default {
     z-index: 3;
   }
   .jq-1 {
-    /*position: absolute;
-    top: 5vw;
-    left: 6.2vw;*/
-    /* width: 11.73vw; */
     width: auto;
     height: 27vw;
   }
   .jq-2 {
-   /* position: absolute;
-    top: 5vw;
-    left: 21.2vw;*/
-    /*  width: 9.1333vw; */
     width: auto;
     height: 27vw;
   }
   .jq-3 {
-    /*position: absolute;
-    top: 5vw;
-    left: 35.2vw;*/
-    /* width: 9.1333vw; */
     width: auto;
-    height: 25.5vw;
+    height: 25.8vw;
+    margin-top: -1vw;
   }
 }
 
@@ -162,8 +151,7 @@ export default {
     margin-right: 1.3vw;
   }
    :nth-of-type(2) {
-    color: red;
-    font-size: 5.6vw;
+    font-size: 6.5vw;
     font-weight: 600;
   }
 }

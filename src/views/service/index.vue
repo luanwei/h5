@@ -97,8 +97,8 @@ this.$router.push({ path: "/detail", query: { type: type } });
 }
 
 .list-box {
-  width: 80%;
-  margin: -10% 10% 0% 10%;
+  width: 90%;
+  margin: -10% 5% 0% 5%;
   display: inline-block;
   font-size: 1.8rem;
   color: #006666;
@@ -108,8 +108,9 @@ this.$router.push({ path: "/detail", query: { type: type } });
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-wrap:wrap;
   list-style: none;
-  width: 16vw;
+  width:20%;
   height: 23vw;
   float: left;
   text-align: center;
@@ -134,7 +135,7 @@ this.$router.push({ path: "/detail", query: { type: type } });
 }
 .list li span {
   font-size: 4vw;
-  padding: 0 1vw;
+  padding: 0 2vw;
 }
 .content-box h5 {
   font-size: 2rem;

@@ -1,6 +1,7 @@
 <template>
   <div class="view">
     <img class="t-banner" src="@/assets/image/cgjfw.png">
+    <div class="banner-line"></div>
     <div class="title">
       特别推出<span class="spec">车管家</span>  专人专责服务，全面周到地 为您的爱车提供——
 
@@ -64,7 +65,7 @@ export default {
   .t-banner {
     display: block;
     width: 100%;
-    height: 65vw;
+    height: auto
   }
 
   .title {
