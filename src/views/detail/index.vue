@@ -43,7 +43,7 @@ export default {
             },
           ]
         },
-        {
+        { 
           type: "cpfw",
           title: "专属产品服务",
           banner: [require('@/assets/image/zscpfw.png')],

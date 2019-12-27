@@ -7,49 +7,57 @@
           <div class="bk-s1">
             <img src="@/assets/image/s_1.png" />
           </div>
-          <span>专设驻点服务</span>
+          <span>专设驻</span>
+          <span>点服务</span>
         </li>
         <li @click="goPage('cpfw')">
           <div class="bk-s2">
             <img src="@/assets/image/s_2.png" />
           </div>
-          <span>专属产品服务</span>
+          <span>专属产</span>
+          <span>品服务</span>
         </li>
         <li @click="goPage('lptd')">
           <div class="bk-s3">
             <img src="@/assets/image/s_3.png" />
           </div>
-          <span>专属理赔通道</span>
+          <span>专属理</span>
+          <span>赔通道</span>
         </li>
         <li @click="goPage('dljy')">
           <div class="bk-s4">
             <img src="@/assets/image/s_4.png" />
           </div>
-          <span>全国道路救援</span>
+          <span>全国道</span>
+          <span>路救援</span>
         </li>
         <li @click="goPage('jsfw')">
           <div class="bk-s5">
             <img src="@/assets/image/s_5.png" />
           </div>
-          <span>代办检审服务</span>
+          <span>代办检</span>
+          <span>审服务</span>
         </li>
         <li @click="goPage('ajfw')">
           <div class="bk-s6">
             <img src="@/assets/image/s_6.png" />
           </div>
-          <span>定期安检服务</span>
+          <span>定期安</span>
+          <span>检服务</span>
         </li>
         <li @click="goPage('cgj')">
           <div class="bk-s7">
             <img src="@/assets/image/s_7.png" />
           </div>
-          <span>"车管家"服务</span>
+          <span>"车管家"</span>
+          <span>服务</span>
         </li>
         <li @click="goPage('zlfw')">
           <div class="bk-s8">
             <img src="@/assets/image/s_8.png" />
           </div>
-          <span>索赔助理服务</span>
+          <span>索赔助</span>
+          <span>理服务</span>
         </li>
       </ul>
     </div>
@@ -110,11 +118,11 @@ this.$router.push({ path: "/detail", query: { type: type } });
   justify-content: center;
   flex-wrap:wrap;
   list-style: none;
-  width:20%;
+  width:24%;
   height: 23vw;
   float: left;
   text-align: center;
-  margin: 0.8rem 2.5%;
+  margin: 0.8rem 0.5%;
   /*border: 1px solid rgba(0, 102, 102, 0.5);*/
   padding: 0.6rem 0;
   border-radius: 0.6rem;
@@ -134,8 +142,8 @@ this.$router.push({ path: "/detail", query: { type: type } });
   height: 6vw;
 }
 .list li span {
-  font-size: 4vw;
-  padding: 0 2vw;
+  font-size: 3.45vw;
+    padding: 0 1vw;
 }
 .content-box h5 {
   font-size: 2rem;
