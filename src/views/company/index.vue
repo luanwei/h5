@@ -3,8 +3,8 @@
     <img class="t-banner" src="../../assets/image/company_t.jpg"/>
     <div class="title">我们是——</div>
     <div :class="{'run-animation':isShow }" class="slogan animation-container animation-fade-right">
-      国家电网自己的财产保险公司
-      <br/>精心服务电力职工的保险公司
+      国家电网自己的财产保险公司<br/>
+      精心服务电力职工的保险公司
     </div>
     <div
       :class="{'run-animation':isShow1 }"
@@ -96,11 +96,11 @@
     right: 0;
     left: 0;
     width: 100%;
-    height: 20.4vw;
+    height: 23vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3vw;
+    margin-bottom: 6vw;
 
     >div {
       flex: 1;
@@ -108,7 +108,7 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
-      height: 20.4vw;
+      height: 23vw;
       color: rgba(0, 102, 102, 0.8);
       font-size: 3.5vw;
       font-weight: 600;
@@ -116,13 +116,16 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 13vw;
-        height: 13vw;
+        width: 16.5vw;
+        height: 16.5vw;
         border-radius: 4.6vw;
 
         img {
-          width: 8.5vw;
+          width: 9.5vw;
         }
+      }
+      span{
+        padding-top: 1vw;
       }
     }
 
@@ -149,10 +152,10 @@
   }
 
   .describe {
-    width: 48%;
-    margin-top: 4vh;
+    width: 49%;
+    margin-top: 3.5vh;
     margin-right: 5%;
-    margin-left: 47%;
+    margin-left: 46%;
     text-align: left;
     color: #a4a4a4;
     font-size: 3.2vw;

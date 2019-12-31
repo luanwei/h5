@@ -11,9 +11,6 @@
       </div>
     </div>
     <div class="top">
-      <!--      <img class="map-1" src="../../assets/image/map-1.jpg">-->
-      <!--      <span>重庆市服务网点全覆盖</span>-->
-      <!--      <img class="map-2" src="../../assets/image/map-2.jpg">-->
       <img class="jq-1" src="../../assets/image/jq-1.png">
       <img class="jq-2" src="../../assets/image/jq-2.png">
       <img class="jq-3" src="../../assets/image/jq-3.png">
@@ -30,7 +27,7 @@
     </div>
     <div :class="{'run-animation':isShow4 }" class="l-c font-b font-family-s animation-container animation-fade-left">
       <span>——</span>
-      <div>报案支付时效快于同业5天，万元以下小额案件快于同业1天</div>
+      <div class="font-family-s">报案支付时效快于同业5天，万元以下小额案件快于同业1天</div>
     </div>
     <div :class="{'run-animation':isShow5 }" class="l-l  animation-container animation-fade-right">
       <span>◆</span>重庆唯一保持零投诉的保险公司

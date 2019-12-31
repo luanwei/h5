@@ -2,11 +2,11 @@
   <div class="view">
     <img class="t-banner" src="../../assets/image/cpfw_img1.jpg">
     <div :class="{'run-animation':isShow1 }" class="l-red animation-container animation-fade-right">
-      <i class="font-r">★ </i> <span class="font-family-s">2010年获评企业集团发展金融</span>
+      <i class="font-r">★ </i><span class="font-family-s">2010年获评企业集团发展金融</span>
       <span class="font-r">典型成功案例</span>
     </div>
     <div :class="{'run-animation':isShow2 }" class="l-red animation-container animation-fade-right">
-      <i class="font-r">★</i> <span class="font-family-s">2012年位列财险公司</span>
+      <i class="font-r">★</i><span class="font-family-s">2012年位列财险公司</span>
       <span class="font-r">盈利能力第一位</span>
     </div>
     <div :class="{'run-animation':isShow3 }" class="l-right font-family-s animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
@@ -16,11 +16,11 @@
     </div>
     <div :class="{'run-animation':isShow5 }" class="l-right font-family-s animation-container animation-fade-left"> ——《中国保险业竞争力报告》</div>
     <div :class="{'run-animation':isShow6 }" class="l-red animation-container animation-fade-right">
-      <i class="font-r">★</i> <span class="font-family-s">2014年获评</span>
+      <i class="font-r">★</i><span class="font-family-s">2014年获评</span>
       <span class="font-r">中国价值成长十佳保险公司</span>
     </div>
     <div :class="{'run-animation':isShow7 }" class="l-red animation-container animation-fade-right">
-      <i class="font-r">★</i> <span class="font-family-s">公司研发的系列电网产品，被确定为</span>
+      <i class="font-r">★</i><span class="font-family-s">公司研发的系列电网产品，被确定为</span>
       <span class="font-r">行业标准</span>
     </div>
   </div>
@@ -97,7 +97,7 @@ export default {
   padding: 5.3vw;
   i {
     font-style: normal;
-    margin-right: 3.85vw;
+    margin-right: 3vw;
     font-size: 4vw;
   }
   span:nth-of-type(2) {
