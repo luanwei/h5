@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "license": "MIT",
   "description": "微信H5",
-  "author": "lw <519046106@qq.com>",
+  "author": "zhouyaling<yaling618@126.com>",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",

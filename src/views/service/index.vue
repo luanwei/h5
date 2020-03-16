@@ -1,6 +1,8 @@
 <template>
   <div class="view">
     <img class="t-banner" src="@/assets/image/service.jpg" />
+    <div class="banner-line reset"></div>
+
     <div class="list-box">
       <ul class="list">
         <li @click="goPage('zdfw')">
@@ -30,6 +32,13 @@
           </div>
           <span>全国道</span>
           <span>路救援</span>
+        </li>
+        <li>
+          <div class="">
+            <!-- <img src="@/assets/image/s_4.png" /> -->
+          </div>
+          <span style="color:transparent"> &nbsp; </span>
+          <span style="color:transparent">&nbsp; </span>
         </li>
         <li @click="goPage('jsfw')">
           <div class="bk-s5">
@@ -61,14 +70,15 @@
         </li>
       </ul>
     </div>
-    <div class="content-box margin-h-10">
-      <h5>工会协同</h5>
-      <p
-        class="font-size-16 font-family-s color-black-a margin-top-8"
-      >在各级工会设立“服务监督员”，维权监督，让您更安心、更放心。</p>
-      <p
-        class="font-size-16 font-family-s color-black-a margin-top-8"
-      >共同打造电力职工独享的服务优势与价值优势，让特别优待惠及每一位职工。</p>
+    <div class="content-box">
+      <!--  <dl>
+        <dt>工会协同：</dt>
+<dd>在各级工会设立“服务监督员”，维权监督，让您更安心、更放心。共同打造电力职工独享的服务优势与价值优势，让特别优待惠及每一位职工。</dd>
+      </dl> -->
+      <h5>工会协同：</h5>
+      <p class="font-size-16 font-family-s color-black-a margin-top-8">
+        在各级工会设立“服务监督员”，维权监督，让您更安心、更放心。共同打造电力职工独享的服务优势与价值优势，让特别优待惠及每一位职工。
+      </p>
     </div>
   </div>
 </template>
@@ -85,13 +95,12 @@ export default {
   methods: {
     goPage(type) {
       if (type == "zlfw") {
-        this.$router.push({ path: "/spzlfw"});
-      }else if (type == "cgj") {
-        this.$router.push({ path: "/cgjfw"});
-      }else{
-this.$router.push({ path: "/detail", query: { type: type } });
+        this.$router.push({ path: "/spzlfw" });
+      } else if (type == "cgj") {
+        this.$router.push({ path: "/cgjfw" });
+      } else {
+        this.$router.push({ path: "/detail", query: { type: type } });
       }
-      
     }
   }
 };
@@ -102,40 +111,82 @@ this.$router.push({ path: "/detail", query: { type: type } });
   width: 80%;
   height: auto;
   margin-left: 10%;
+  position: relative;
+  z-index: 1;
 }
 
 .list-box {
-  width: 90%;
-  margin: -10% 5% 0% 5%;
+  /*  width: 90%; */
+  width: 86%;
+  margin: 6% 7% 0% 7%;
   display: inline-block;
   font-size: 1.8rem;
   color: #006666;
 }
 
 .list li {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  flex-wrap:wrap;
+  flex-wrap: wrap; */
   list-style: none;
-  width:24%;
-  height: 23vw;
+  width: 33.1%;
+  /* height: 23vw; */
   float: left;
   text-align: center;
-  margin: 0.8rem 0.5%;
+  padding: 2.5vw 0;
   /*border: 1px solid rgba(0, 102, 102, 0.5);*/
-  padding: 0.6rem 0;
-  border-radius: 0.6rem;
+  /* border-radius: 0.6rem; */
   cursor: pointer;
-  margin-top: 3.2vw;
+  /*  margin-top: 3.2vw; */
+  box-sizing: border-box;
+  border: 1px solid #a0a0a0;
+  border-bottom: none;
+  border-right: none;
+
+  /*  width: 31.5%; */
+  /*  background: #f3e5dc; */
+  /*  margin: 0.8%; */
+  /* border-radius: 0.6rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(5, 175, 167, 0.4) 0%,
+    rgba(5, 175, 167, 0.8) 100%
+  ); */
 }
+
+.list li:nth-child(1) {
+  /*  border-top-left-radius: 0.8rem; */
+}
+
+.list li:nth-child(3) {
+  /*  border-top-right-radius: 0.8rem; */
+}
+
+.list li:nth-child(3n) {
+  border-right: 1px solid #a0a0a0;
+}
+
+.list li:nth-child(7) {
+  border-bottom: 1px solid #a0a0a0;
+  /* border-bottom-left-radius: 0.8rem; */
+}
+.list li:nth-child(8) {
+  border-bottom: 1px solid #a0a0a0;
+}
+.list li:nth-child(9) {
+  border-bottom: 1px solid #a0a0a0;
+  /*  border-bottom-right-radius: 0.8rem; */
+}
+
 .list li div {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 12vw;
-  height: 12vw;
+  width: 10vw;
+  height: 10vw;
   border-radius: 4.6vw;
+  margin: 0 auto;
 }
 .list li div img {
   width: 6vw;
@@ -143,14 +194,25 @@ this.$router.push({ path: "/detail", query: { type: type } });
 }
 .list li span {
   font-size: 3.45vw;
-    padding: 0 1vw;
+  padding: 0 1vw;
+  text-decoration: underline;
+  display: block;
 }
+
+.content-box {
+  display: flex;
+  justify-content: center;
+  margin: 5% 8% 0 9%;
+}
+
 .content-box h5 {
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin: 1rem 0 0.6rem 0;
+  min-width: 9.2rem;
 }
 
 .content-box p {
-  padding-left: 3rem;
+  line-height: 2.7rem;
 }
 
 .bk-s1 {
@@ -183,5 +245,11 @@ this.$router.push({ path: "/detail", query: { type: type } });
 
 .bk-s8 {
   background-color: #1e90ff;
+}
+
+.banner-line.reset {
+  margin-top: -10%;
+  position: relative;
+  z-index: 1;
 }
 </style>
